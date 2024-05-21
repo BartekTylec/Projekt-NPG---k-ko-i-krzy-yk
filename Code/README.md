@@ -1,1 +1,1 @@
-Folder kodu, ten plik musia powstać bo git nie pozwala na istnienie pustych folderów. Proszę README nie usuwać.
+Folder projektu, będą tu wszsytkie rzeczy potrzebne do naszej gry. Cała otoczka organizacyjna znajduje się w archiwum.
