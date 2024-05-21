@@ -1,3 +1,10 @@
-# Projekt-NPG-TicTacToe
-Tutaj będziemy pracować nad naszym projektem zaliczeniowym
-Plik Archive zawiera organizację projektu, plik Project zawiera składowe aplikacji.
+# CZŁONKOWIE PRZECZYTAJCIE ZANIM COKOLWIEK ZROBICIE
+
+PRIMO: WSZYSTKIE ZMIANY MAJĄ BYĆ WPROWADZANE NA SWOIM BRANCHU NIE NA MAINIE, MAINA NIE WOLNO RUSZAĆ
+
+SECUNDO: ZANIM ZACZNIECIE COKOLWIEK MUSICIE ZAKTUALICOWAĆ SWOJEGO BRANCHA W STOSUNKU DO MAINA CZYLI ZROBIĆ SOBIE PULLA Z MAINA DO SIEBIE NIE NA ODWRÓT
+
+TERTIO: JAK COŚ NIE WIECIE W GITA TO PROSZĘ SIĘ SPYTAĆ A NIE KLIKAĆ NA CZUJA
+
+//Tutaj będziemy pracować nad naszym projektem zaliczeniowym
+//Plik Archive zawiera organizację projektu, plik Project zawiera składowe aplikacji.
