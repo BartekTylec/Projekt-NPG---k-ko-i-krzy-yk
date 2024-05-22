@@ -26,3 +26,11 @@ void __fastcall TStart::Button2Click(TObject *Sender)
 			  Start->Close();
 }
 //---------------------------------------------------------------------------
+
+
+void __fastcall TStart::StartCreate(TObject *Sender)
+{
+                    Image1->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/XiO.bmp");
+}
+//---------------------------------------------------------------------------
+
