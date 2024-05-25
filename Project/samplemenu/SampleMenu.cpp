@@ -3,8 +3,8 @@
 #include <vcl.h>
 #pragma hdrstop
 
-#include "Unit1.h"
-#include "Unit2.h"
+#include "SampleMenu.h"
+#include "ThrByThr.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma resource "*.dfm"
