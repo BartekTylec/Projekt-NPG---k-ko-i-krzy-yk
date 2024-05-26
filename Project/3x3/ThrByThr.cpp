@@ -1,4 +1,4 @@
-//---------------------------------------------------------------------------
+
 
 #include <vcl.h>
 #pragma hdrstop
@@ -30,12 +30,20 @@ void __fastcall TForm2::XO1Click(TObject *Sender)
 
 			 if(CheckWinCondition()==1)
 	 {
-		Wyniki -> Caption="Wygral  ",CurryPlayerTaste;
-		return;
+				if (sq1 == 'x')
+				{
+						Wyniki -> Caption="Wygral X ";
+						return;
+				}
+				else
+				{
+					Wyniki -> Caption="Wygral O ";
+						return;
+				}
 	 }
 	 else if(CheckWinCondition()==2)
 	 {
-		Wyniki -> Caption="REMIS",CurryPlayerTaste;
+		Wyniki -> Caption="REMIS";
 		return;
 	 }
 	 }
@@ -49,12 +57,20 @@ void __fastcall TForm2::XO1Click(TObject *Sender)
 
 		if(CheckWinCondition()==1)
 	 {
-		Wyniki -> Caption="Wygral  ",CurryPlayerTaste;
-		return;
+						if (sq1 == 'x')
+				{
+						Wyniki -> Caption="Wygral X ";
+						return;
+				}
+				else
+				{
+					Wyniki -> Caption="Wygral O ";
+						return;
+				}
 	 }
 	 else if(CheckWinCondition()==2)
 	 {
-		Wyniki -> Caption="REMIS",CurryPlayerTaste;
+		Wyniki -> Caption="REMIS";
 		return;
 	 }
 	 }
@@ -72,12 +88,20 @@ void __fastcall TForm2::XO2Click(TObject *Sender)
 
 		 if(CheckWinCondition()==1)
 	 {
-		Wyniki -> Caption="Wygral  ",CurryPlayerTaste;
-		return;
+						if (sq2 == 'x')
+				{
+						Wyniki -> Caption="Wygral X ";
+						return;
+				}
+				else
+				{
+					Wyniki -> Caption="Wygral O ";
+						return;
+				}
 	 }
 	 else if(CheckWinCondition()==2)
 	 {
-		Wyniki -> Caption="REMIS",CurryPlayerTaste;
+		Wyniki -> Caption="REMIS";
 		return;
 	 }
 	 }
@@ -91,12 +115,20 @@ void __fastcall TForm2::XO2Click(TObject *Sender)
 
 		 if(CheckWinCondition()==1)
 	 {
-		Wyniki -> Caption="Wygral  ",CurryPlayerTaste;
-		return;
+						if (sq2 == 'x')
+				{
+						Wyniki -> Caption="Wygral X ";
+						return;
+				}
+				else
+				{
+					Wyniki -> Caption="Wygral O ";
+						return;
+				}
 	 }
 	 else if(CheckWinCondition()==2)
 	 {
-		Wyniki -> Caption="REMIS",CurryPlayerTaste;
+		Wyniki -> Caption="REMIS";
 		return;
 	 }
 	 }
@@ -114,12 +146,20 @@ void __fastcall TForm2::XO3Click(TObject *Sender)
 
 		 if(CheckWinCondition()==1)
 	 {
-		Wyniki -> Caption="Wygral  ",CurryPlayerTaste;
-		return;
+						if (sq3 == 'x')
+				{
+						Wyniki -> Caption="Wygral X ";
+						return;
+				}
+				else
+				{
+					Wyniki -> Caption="Wygral O ";
+						return;
+				}
 	 }
 	 else if(CheckWinCondition()==2)
 	 {
-		Wyniki -> Caption="REMIS",CurryPlayerTaste;
+		Wyniki -> Caption="REMIS";
 		return;
 	 }
 	 }
@@ -133,12 +173,20 @@ void __fastcall TForm2::XO3Click(TObject *Sender)
 
 		 if(CheckWinCondition()==1)
 	 {
-		Wyniki -> Caption="Wygral  ",CurryPlayerTaste;
-		return;
+						if (sq3 == 'x')
+				{
+						Wyniki -> Caption="Wygral X ";
+						return;
+				}
+				else
+				{
+					Wyniki -> Caption="Wygral O ";
+						return;
+				}
 	 }
 	 else if(CheckWinCondition()==2)
 	 {
-		Wyniki -> Caption="REMIS",CurryPlayerTaste;
+		Wyniki -> Caption="REMIS";
 		return;
 	 }
 	 }
@@ -157,12 +205,20 @@ void __fastcall TForm2::XO4Click(TObject *Sender)
 
 		 if(CheckWinCondition()==1)
 	 {
-		Wyniki -> Caption="Wygral  ",CurryPlayerTaste;
-		return;
+						if (sq4 == 'x')
+				{
+						Wyniki -> Caption="Wygral X ";
+						return;
+				}
+				else
+				{
+					Wyniki -> Caption="Wygral O ";
+						return;
+				}
 	 }
 	 else if(CheckWinCondition()==2)
 	 {
-		Wyniki -> Caption="REMIS",CurryPlayerTaste;
+		Wyniki -> Caption="REMIS";
 		return;
 	 }
 	 }
@@ -176,12 +232,20 @@ void __fastcall TForm2::XO4Click(TObject *Sender)
 
          if(CheckWinCondition()==1)
 	 {
-		Wyniki -> Caption="Wygral  ",CurryPlayerTaste;
-		return;
+						if (sq4 == 'x')
+				{
+						Wyniki -> Caption="Wygral X ";
+						return;
+				}
+				else
+				{
+					Wyniki -> Caption="Wygral O ";
+						return;
+				}
 	 }
 	 else if(CheckWinCondition()==2)
 	 {
-		Wyniki -> Caption="REMIS",CurryPlayerTaste;
+		Wyniki -> Caption="REMIS";
 		return;
 	 }
 	 }
@@ -198,12 +262,20 @@ void __fastcall TForm2::XO5Click(TObject *Sender)
 
 		 if(CheckWinCondition()==1)
 	 {
-		Wyniki -> Caption="Wygral  ",CurryPlayerTaste;
-		return;
+					if (sq5 == 'x')
+				{
+						Wyniki -> Caption="Wygral X ";
+						return;
+				}
+				else
+				{
+					Wyniki -> Caption="Wygral O ";
+						return;
+				}
 	 }
 	 else if(CheckWinCondition()==2)
 	 {
-		Wyniki -> Caption="REMIS",CurryPlayerTaste;
+		Wyniki -> Caption="REMIS";
 		return;
 	 }
 	 }
@@ -215,10 +287,18 @@ void __fastcall TForm2::XO5Click(TObject *Sender)
 		XO5->Enabled = False;
 
 
-         if(CheckWinCondition()==1)
+		 if(CheckWinCondition()==1)
 	 {
-		Wyniki -> Caption="Wygral  ",CurryPlayerTaste;
-		return;
+						if (sq5 == 'x')
+				{
+						Wyniki -> Caption="Wygral X ";
+						return;
+				}
+				else
+				{
+					Wyniki -> Caption="Wygral O ";
+						return;
+				}
 	 }
 	 else if(CheckWinCondition()==2)
 	 {
@@ -241,8 +321,16 @@ void __fastcall TForm2::XO6Click(TObject *Sender)
 
 		 if(CheckWinCondition()==1)
 	 {
-		Wyniki -> Caption="Wygral  ",CurryPlayerTaste;
-		return;
+						if (sq6 == 'x')
+				{
+						Wyniki -> Caption="Wygral X ";
+						return;
+				}
+				else
+				{
+					Wyniki -> Caption="Wygral O ";
+						return;
+				}
 	 }
 	 else if(CheckWinCondition()==2)
 	 {
@@ -262,8 +350,16 @@ void __fastcall TForm2::XO6Click(TObject *Sender)
 
 		 if(CheckWinCondition()==1)
 	 {
-		Wyniki -> Caption="Wygral  ",CurryPlayerTaste;
-		return;
+						if (sq6 == 'x')
+				{
+						Wyniki -> Caption="Wygral X ";
+						return;
+				}
+				else
+				{
+					Wyniki -> Caption="Wygral O ";
+						return;
+				}
 	 }
 	 else if(CheckWinCondition()==2)
 	 {
@@ -286,8 +382,16 @@ void __fastcall TForm2::XO9Click(TObject *Sender)
 
 		 if(CheckWinCondition()==1)
 	 {
-		Wyniki -> Caption="Wygral  ",CurryPlayerTaste;
-		return;
+						if (sq9 == 'x')
+				{
+						Wyniki -> Caption="Wygral X ";
+						return;
+				}
+				else
+				{
+					Wyniki -> Caption="Wygral O ";
+						return;
+				}
 	 }
 	 else if(CheckWinCondition()==2)
 	 {
@@ -306,8 +410,16 @@ void __fastcall TForm2::XO9Click(TObject *Sender)
 
 		 if(CheckWinCondition()==1)
 	 {
-		Wyniki -> Caption="Wygral  ",CurryPlayerTaste;
-		return;
+						if (sq9 == 'x')
+				{
+						Wyniki -> Caption="Wygral X ";
+						return;
+				}
+				else
+				{
+					Wyniki -> Caption="Wygral O ";
+						return;
+				}
 	 }
 	 else if(CheckWinCondition()==2)
 	 {
@@ -328,8 +440,16 @@ void __fastcall TForm2::XO8Click(TObject *Sender)
 
 		 if(CheckWinCondition()==1)
 	 {
-		Wyniki -> Caption="Wygral  ",CurryPlayerTaste;
-		return;
+						if (sq8 == 'x')
+				{
+						Wyniki -> Caption="Wygral X ";
+						return;
+				}
+				else
+				{
+					Wyniki -> Caption="Wygral O ";
+						return;
+				}
 	 }
 	 else if(CheckWinCondition()==2)
 	 {
@@ -348,8 +468,16 @@ void __fastcall TForm2::XO8Click(TObject *Sender)
 
 		 if(CheckWinCondition()==1)
 	 {
-		Wyniki -> Caption="Wygral  ",CurryPlayerTaste;
-		return;
+						if (sq8 == 'x')
+				{
+						Wyniki -> Caption="Wygral X ";
+						return;
+				}
+				else
+				{
+					Wyniki -> Caption="Wygral O ";
+						return;
+				}
 	 }
 	 else if(CheckWinCondition()==2)
 	 {
@@ -370,8 +498,16 @@ void __fastcall TForm2::XO7Click(TObject *Sender)
 
 		 if(CheckWinCondition()==1)
 	 {
-		Wyniki -> Caption="Wygral  ",CurryPlayerTaste;
-		return;
+						if (sq7 == 'x')
+				{
+						Wyniki -> Caption="Wygral X ";
+						return;
+				}
+				else
+				{
+					Wyniki -> Caption="Wygral O ";
+						return;
+				}
 	 }
 	 else if(CheckWinCondition()==2)
 	 {
@@ -389,12 +525,20 @@ void __fastcall TForm2::XO7Click(TObject *Sender)
 
 		 if(CheckWinCondition()==1)
 	 {
-		Wyniki -> Caption="Wygral  ",CurryPlayerTaste;
-		return;
+        				if (sq7 == 'x')
+				{
+						Wyniki -> Caption="Wygral X ";
+						return;
+				}
+				else
+				{
+					Wyniki -> Caption="Wygral O ";
+						return;
+				}
 	 }
 	 else if(CheckWinCondition()==2)
 	 {
-		Wyniki -> Caption="REMIS",CurryPlayerTaste;
+		Wyniki -> Caption="REMIS";
 		return;
 	 }
 	 }
@@ -405,41 +549,125 @@ int TForm2:: CheckWinCondition()
 {
 	if(sq1==sq2 && sq2==sq3 && sq1 != NULL  )
 	{
+    	XO1->Enabled = False;
+		XO2->Enabled = False;
+		XO3->Enabled = False;
+		XO4->Enabled = False;
+		XO5->Enabled = False;
+		XO6->Enabled = False;
+		XO7->Enabled = False;
+		XO8->Enabled = False;
+		XO9->Enabled = False;
 		return 1;
 	}
 	else if(sq4==sq5 && sq5==sq6 && sq4 != NULL )
 	{
+    	XO1->Enabled = False;
+		XO2->Enabled = False;
+		XO3->Enabled = False;
+		XO4->Enabled = False;
+		XO5->Enabled = False;
+		XO6->Enabled = False;
+		XO7->Enabled = False;
+		XO8->Enabled = False;
+		XO9->Enabled = False;
 		return 1;
 	}
 	else if(sq7==sq8 && sq8==sq9 && sq7 != NULL  )
 	{
+    	XO1->Enabled = False;
+		XO2->Enabled = False;
+		XO3->Enabled = False;
+		XO4->Enabled = False;
+		XO5->Enabled = False;
+		XO6->Enabled = False;
+		XO7->Enabled = False;
+		XO8->Enabled = False;
+		XO9->Enabled = False;
 		return 1;
 	}
 	else if(sq1==sq4 && sq4==sq7 && sq4 != NULL  )
 	{
+    	XO1->Enabled = False;
+		XO2->Enabled = False;
+		XO3->Enabled = False;
+		XO4->Enabled = False;
+		XO5->Enabled = False;
+		XO6->Enabled = False;
+		XO7->Enabled = False;
+		XO8->Enabled = False;
+		XO9->Enabled = False;
 		return 1;
 	}
 	else if (sq2==sq5 && sq5==sq8 && sq2 != NULL )
 	{
-
+               	XO1->Enabled = False;
+		XO2->Enabled = False;
+		XO3->Enabled = False;
+		XO4->Enabled = False;
+		XO5->Enabled = False;
+		XO6->Enabled = False;
+		XO7->Enabled = False;
+		XO8->Enabled = False;
+		XO9->Enabled = False;
 	  return 1;
 	}
 	else if ( sq3==sq6 && sq6==sq9 && sq3 != NULL)
 	 {
+		XO1->Enabled = False;
+		XO2->Enabled = False;
+		XO3->Enabled = False;
+		XO4->Enabled = False;
+		XO5->Enabled = False;
+		XO6->Enabled = False;
+		XO7->Enabled = False;
+		XO8->Enabled = False;
+		XO9->Enabled = False;
 		return 1;
+
 	 }
 	else if(sq1==sq5 && sq5==sq9 && sq5 != NULL)
 	{
+       	XO1->Enabled = False;
+		XO2->Enabled = False;
+		XO3->Enabled = False;
+		XO4->Enabled = False;
+		XO5->Enabled = False;
+		XO6->Enabled = False;
+		XO7->Enabled = False;
+		XO8->Enabled = False;
+		XO9->Enabled = False;
 		return 1;
+
 	}
 	else if (sq7==sq5 && sq5==sq3 && sq7!= NULL  )
 	{
-        return 1;
-    }
+		XO1->Enabled = False;
+		XO2->Enabled = False;
+		XO3->Enabled = False;
+		XO4->Enabled = False;
+		XO5->Enabled = False;
+		XO6->Enabled = False;
+		XO7->Enabled = False;
+		XO8->Enabled = False;
+		XO9->Enabled = False;
+		return 1;
+
+	}
 
 	else if(sq1!=NULL && sq2!=NULL && sq3!=NULL && sq4!=NULL  && sq5!=NULL && sq6!=NULL && sq7!=NULL && sq8!=NULL && sq9!= NULL)
 	{
+			XO1->Enabled = False;
+		XO2->Enabled = False;
+		XO3->Enabled = False;
+		XO4->Enabled = False;
+		XO5->Enabled = False;
+		XO6->Enabled = False;
+		XO7->Enabled = False;
+		XO8->Enabled = False;
+		XO9->Enabled = False;
 		return 2;
+
 	}
 	else
 	{
