@@ -1,4 +1,4 @@
-
+//---------------------------------------------------------------------------
 
 #include <vcl.h>
 #pragma hdrstop
@@ -11,10 +11,11 @@
 TForm2 *Form2;
 char CurryPlayerTaste =  'x';
 char sq1, sq2, sq3, sq4, sq5, sq6, sq7, sq8, sq9;
+char ostatniRuch;
 //---------------------------------------------------------------------------
 __fastcall TForm2::TForm2(TComponent* Owner): TForm(Owner)
 {
-	//CurryPlayer->TControl::SetText(CurryPlayerTaste);
+		CurryPlayer->Caption =CurryPlayerTaste;
 }
 //---------------------------------------------------------------------------
 
@@ -25,6 +26,7 @@ void __fastcall TForm2::XO1Click(TObject *Sender)
 		sq1=CurryPlayerTaste;
 		XO1->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/x.bmp");
 		CurryPlayerTaste='o';
+		CurryPlayer->Caption =CurryPlayerTaste;
 		 XO1->Enabled = False;
 
 
@@ -32,12 +34,12 @@ void __fastcall TForm2::XO1Click(TObject *Sender)
 	 {
 				if (sq1 == 'x')
 				{
-						Wyniki -> Caption="Wygral X ";
+						Wyniki -> Caption="Wygral X!!! ";
 						return;
 				}
 				else
 				{
-					Wyniki -> Caption="Wygral O ";
+					Wyniki -> Caption="Wygral O!!! ";
 						return;
 				}
 	 }
@@ -52,6 +54,7 @@ void __fastcall TForm2::XO1Click(TObject *Sender)
 		sq1=CurryPlayerTaste;
 		XO1->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
 		CurryPlayerTaste='x';
+		CurryPlayer->Caption =CurryPlayerTaste;
 		XO1->Enabled = False;
 
 
@@ -59,12 +62,12 @@ void __fastcall TForm2::XO1Click(TObject *Sender)
 	 {
 						if (sq1 == 'x')
 				{
-						Wyniki -> Caption="Wygral X ";
+						Wyniki -> Caption="Wygral X!!! ";
 						return;
 				}
 				else
 				{
-					Wyniki -> Caption="Wygral O ";
+					Wyniki -> Caption="Wygral O!!! ";
 						return;
 				}
 	 }
@@ -83,6 +86,7 @@ void __fastcall TForm2::XO2Click(TObject *Sender)
 		sq2=CurryPlayerTaste;
 		XO2->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/x.bmp");
 		CurryPlayerTaste='o';
+		CurryPlayer->Caption =CurryPlayerTaste;
 		XO2->Enabled = False;
 
 
@@ -90,12 +94,12 @@ void __fastcall TForm2::XO2Click(TObject *Sender)
 	 {
 						if (sq2 == 'x')
 				{
-						Wyniki -> Caption="Wygral X ";
+						Wyniki -> Caption="Wygral X!!! ";
 						return;
 				}
 				else
 				{
-					Wyniki -> Caption="Wygral O ";
+					Wyniki -> Caption="Wygral O!!! ";
 						return;
 				}
 	 }
@@ -110,6 +114,7 @@ void __fastcall TForm2::XO2Click(TObject *Sender)
 		sq2=CurryPlayerTaste;
 		XO2->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
 		CurryPlayerTaste='x';
+		CurryPlayer->Caption =CurryPlayerTaste;
 		XO2->Enabled = False;
 
 
@@ -117,12 +122,12 @@ void __fastcall TForm2::XO2Click(TObject *Sender)
 	 {
 						if (sq2 == 'x')
 				{
-						Wyniki -> Caption="Wygral X ";
+						Wyniki -> Caption="Wygral X!!! ";
 						return;
 				}
 				else
 				{
-					Wyniki -> Caption="Wygral O ";
+					Wyniki -> Caption="Wygral O!!! ";
 						return;
 				}
 	 }
@@ -141,6 +146,7 @@ void __fastcall TForm2::XO3Click(TObject *Sender)
 	   sq3=CurryPlayerTaste;
 		XO3->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/x.bmp");
 		CurryPlayerTaste='o';
+		CurryPlayer->Caption =CurryPlayerTaste;
 		XO3->Enabled = False;
 
 
@@ -148,12 +154,12 @@ void __fastcall TForm2::XO3Click(TObject *Sender)
 	 {
 						if (sq3 == 'x')
 				{
-						Wyniki -> Caption="Wygral X ";
+						Wyniki -> Caption="Wygral X!!! ";
 						return;
 				}
 				else
 				{
-					Wyniki -> Caption="Wygral O ";
+					Wyniki -> Caption="Wygral O!!! ";
 						return;
 				}
 	 }
@@ -168,6 +174,7 @@ void __fastcall TForm2::XO3Click(TObject *Sender)
 		sq3=CurryPlayerTaste;
 		XO3->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
 		CurryPlayerTaste='x';
+		CurryPlayer->Caption =CurryPlayerTaste;
 		XO3->Enabled = False;
 
 
@@ -175,12 +182,12 @@ void __fastcall TForm2::XO3Click(TObject *Sender)
 	 {
 						if (sq3 == 'x')
 				{
-						Wyniki -> Caption="Wygral X ";
+						Wyniki -> Caption="Wygral X!!! ";
 						return;
 				}
 				else
 				{
-					Wyniki -> Caption="Wygral O ";
+					Wyniki -> Caption="Wygral O!!! ";
 						return;
 				}
 	 }
@@ -199,6 +206,7 @@ void __fastcall TForm2::XO4Click(TObject *Sender)
 		sq4=CurryPlayerTaste;
 		XO4->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/x.bmp");
 		CurryPlayerTaste='o';
+		CurryPlayer->Caption =CurryPlayerTaste;
 		XO4->Enabled = False;
 
 
@@ -207,12 +215,12 @@ void __fastcall TForm2::XO4Click(TObject *Sender)
 	 {
 						if (sq4 == 'x')
 				{
-						Wyniki -> Caption="Wygral X ";
+						Wyniki -> Caption="Wygral X!!! ";
 						return;
 				}
 				else
 				{
-					Wyniki -> Caption="Wygral O ";
+					Wyniki -> Caption="Wygral O!!! ";
 						return;
 				}
 	 }
@@ -227,6 +235,7 @@ void __fastcall TForm2::XO4Click(TObject *Sender)
 		sq4=CurryPlayerTaste;
 		XO4->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
 		CurryPlayerTaste='x';
+		CurryPlayer->Caption =CurryPlayerTaste;
 		XO4->Enabled = False;
 
 
@@ -234,12 +243,12 @@ void __fastcall TForm2::XO4Click(TObject *Sender)
 	 {
 						if (sq4 == 'x')
 				{
-						Wyniki -> Caption="Wygral X ";
+						Wyniki -> Caption="Wygral X!!! ";
 						return;
 				}
 				else
 				{
-					Wyniki -> Caption="Wygral O ";
+					Wyniki -> Caption="Wygral O!!! ";
 						return;
 				}
 	 }
@@ -257,6 +266,7 @@ void __fastcall TForm2::XO5Click(TObject *Sender)
 		sq5=CurryPlayerTaste;
 		XO5->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/x.bmp");
 		CurryPlayerTaste='o';
+		CurryPlayer->Caption =CurryPlayerTaste;
 		XO5->Enabled = False;
 
 
@@ -264,12 +274,12 @@ void __fastcall TForm2::XO5Click(TObject *Sender)
 	 {
 					if (sq5 == 'x')
 				{
-						Wyniki -> Caption="Wygral X ";
+						Wyniki -> Caption="Wygral X!!! ";
 						return;
 				}
 				else
 				{
-					Wyniki -> Caption="Wygral O ";
+					Wyniki -> Caption="Wygral O!!! ";
 						return;
 				}
 	 }
@@ -284,6 +294,7 @@ void __fastcall TForm2::XO5Click(TObject *Sender)
 		sq5=CurryPlayerTaste;
 		XO5->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
 		CurryPlayerTaste='x';
+		CurryPlayer->Caption =CurryPlayerTaste;
 		XO5->Enabled = False;
 
 
@@ -291,12 +302,12 @@ void __fastcall TForm2::XO5Click(TObject *Sender)
 	 {
 						if (sq5 == 'x')
 				{
-						Wyniki -> Caption="Wygral X ";
+						Wyniki -> Caption="Wygral X!!! ";
 						return;
 				}
 				else
 				{
-					Wyniki -> Caption="Wygral O ";
+					Wyniki -> Caption="Wygral O!!! ";
 						return;
 				}
 	 }
@@ -315,6 +326,7 @@ void __fastcall TForm2::XO6Click(TObject *Sender)
 		sq6=CurryPlayerTaste;
 		XO6->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/x.bmp");
 		CurryPlayerTaste='o';
+		CurryPlayer->Caption =CurryPlayerTaste;
 		XO6->Enabled = False;
 
 
@@ -323,12 +335,12 @@ void __fastcall TForm2::XO6Click(TObject *Sender)
 	 {
 						if (sq6 == 'x')
 				{
-						Wyniki -> Caption="Wygral X ";
+						Wyniki -> Caption="Wygral X!!! ";
 						return;
 				}
 				else
 				{
-					Wyniki -> Caption="Wygral O ";
+					Wyniki -> Caption="Wygral O!!! ";
 						return;
 				}
 	 }
@@ -344,6 +356,7 @@ void __fastcall TForm2::XO6Click(TObject *Sender)
 		sq6=CurryPlayerTaste;
 		XO6->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
 		CurryPlayerTaste='x';
+		CurryPlayer->Caption =CurryPlayerTaste;
 		XO6->Enabled = False;
 
 
@@ -352,12 +365,12 @@ void __fastcall TForm2::XO6Click(TObject *Sender)
 	 {
 						if (sq6 == 'x')
 				{
-						Wyniki -> Caption="Wygral X ";
+						Wyniki -> Caption="Wygral X!!! ";
 						return;
 				}
 				else
 				{
-					Wyniki -> Caption="Wygral O ";
+					Wyniki -> Caption="Wygral O!!! ";
 						return;
 				}
 	 }
@@ -376,6 +389,7 @@ void __fastcall TForm2::XO9Click(TObject *Sender)
 		sq9=CurryPlayerTaste;
 		XO9->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/x.bmp");
 		CurryPlayerTaste='o';
+		CurryPlayer->Caption =CurryPlayerTaste;
 		XO9->Enabled = False;
 
 
@@ -384,12 +398,12 @@ void __fastcall TForm2::XO9Click(TObject *Sender)
 	 {
 						if (sq9 == 'x')
 				{
-						Wyniki -> Caption="Wygral X ";
+						Wyniki -> Caption="Wygral X!!! ";
 						return;
 				}
 				else
 				{
-					Wyniki -> Caption="Wygral O ";
+					Wyniki -> Caption="Wygral O!!! ";
 						return;
 				}
 	 }
@@ -404,6 +418,7 @@ void __fastcall TForm2::XO9Click(TObject *Sender)
 		sq9=CurryPlayerTaste;
 		XO9->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
 		CurryPlayerTaste='x';
+		CurryPlayer->Caption =CurryPlayerTaste;
 		XO9->Enabled = False;
 
 
@@ -412,12 +427,12 @@ void __fastcall TForm2::XO9Click(TObject *Sender)
 	 {
 						if (sq9 == 'x')
 				{
-						Wyniki -> Caption="Wygral X ";
+						Wyniki -> Caption="Wygral X!!! ";
 						return;
 				}
 				else
 				{
-					Wyniki -> Caption="Wygral O ";
+					Wyniki -> Caption="Wygral O!!! ";
 						return;
 				}
 	 }
@@ -435,6 +450,7 @@ void __fastcall TForm2::XO8Click(TObject *Sender)
 		sq8=CurryPlayerTaste;
 		XO8->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/x.bmp");
 		CurryPlayerTaste='o';
+		CurryPlayer->Caption =CurryPlayerTaste;
 		XO8->Enabled = False;
 
 
@@ -442,12 +458,12 @@ void __fastcall TForm2::XO8Click(TObject *Sender)
 	 {
 						if (sq8 == 'x')
 				{
-						Wyniki -> Caption="Wygral X ";
+						Wyniki -> Caption="Wygral X!!! ";
 						return;
 				}
 				else
 				{
-					Wyniki -> Caption="Wygral O ";
+					Wyniki -> Caption="Wygral O!!! ";
 						return;
 				}
 	 }
@@ -462,6 +478,7 @@ void __fastcall TForm2::XO8Click(TObject *Sender)
 		sq8=CurryPlayerTaste;
 		XO8->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
 		CurryPlayerTaste='x';
+		CurryPlayer->Caption =CurryPlayerTaste;
 		XO8->Enabled = False;
 
 
@@ -470,12 +487,12 @@ void __fastcall TForm2::XO8Click(TObject *Sender)
 	 {
 						if (sq8 == 'x')
 				{
-						Wyniki -> Caption="Wygral X ";
+						Wyniki -> Caption="Wygral X!!! ";
 						return;
 				}
 				else
 				{
-					Wyniki -> Caption="Wygral O ";
+					Wyniki -> Caption="Wygral O!!! ";
 						return;
 				}
 	 }
@@ -493,6 +510,7 @@ void __fastcall TForm2::XO7Click(TObject *Sender)
 		sq7=CurryPlayerTaste;
 		XO7->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/x.bmp");
 		CurryPlayerTaste='o';
+		CurryPlayer->Caption =CurryPlayerTaste;
 		XO7->Enabled = False;
 
 
@@ -500,12 +518,12 @@ void __fastcall TForm2::XO7Click(TObject *Sender)
 	 {
 						if (sq7 == 'x')
 				{
-						Wyniki -> Caption="Wygral X ";
+						Wyniki -> Caption="Wygral X!!! ";
 						return;
 				}
 				else
 				{
-					Wyniki -> Caption="Wygral O ";
+					Wyniki -> Caption="Wygral O!!! ";
 						return;
 				}
 	 }
@@ -520,6 +538,7 @@ void __fastcall TForm2::XO7Click(TObject *Sender)
 		sq7=CurryPlayerTaste;
 		XO7->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
 		CurryPlayerTaste='x';
+        CurryPlayer->Caption =CurryPlayerTaste;
 		XO7->Enabled = False;
 
 
@@ -527,12 +546,12 @@ void __fastcall TForm2::XO7Click(TObject *Sender)
 	 {
         				if (sq7 == 'x')
 				{
-						Wyniki -> Caption="Wygral X ";
+						Wyniki -> Caption="Wygral X!!! ";
 						return;
 				}
 				else
 				{
-					Wyniki -> Caption="Wygral O ";
+					Wyniki -> Caption="Wygral O!!! ";
 						return;
 				}
 	 }
@@ -691,7 +710,11 @@ void __fastcall TForm2::OnCreate(TObject *Sender)
 		XO7->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/nic.bmp");
 		XO8->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/nic.bmp");
 		XO9->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/nic.bmp");
+        Cofnij->Enabled = False;
 }
 //---------------------------------------------------------------------------
+
+
+
 
 
