@@ -3,7 +3,9 @@
 #include <vcl.h>
 #pragma hdrstop
 
-#include "Unit2.h"
+#include "Menu.h"
+#include "ThrByThr.h"
+#include "FoByFo.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma resource "*.dfm"
@@ -16,15 +18,16 @@ __fastcall TTylec::TTylec(TComponent* Owner)
 //---------------------------------------------------------------------------
 void __fastcall TTylec::Button2Click(TObject *Sender)
 {
-
 		   Tylec->Close();
+           FourByFour->ShowModal();
 }
 //---------------------------------------------------------------------------
 
 void __fastcall TTylec::Button1Click(TObject *Sender)
 {
 
-		   Tylec->Close();
+		   Tylec->Hide();
+		   Form2->ShowModal();
 }
 //---------------------------------------------------------------------------
 
