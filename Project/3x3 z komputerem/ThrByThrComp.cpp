@@ -14,14 +14,12 @@
 #pragma package(smart_init)
 #pragma resource "*.dfm"
 TForm3 *Form3;
-const char CurryPlayerTaste =  'x';
-char ostatniRuch;
-std::vector<int> listaP髄 = {1, 2, 3, 4, 5 ,6, 7, 8, 9};
-int ruchComp;
-int sqX;
-int number;
-int valueToBeDeleted;
-int number2;
+//const char CurryPlayerTaste =  'x';
+//char ostatniRuch;
+//int ruchComp;
+//int sqX;
+//int number;
+//int valueToBeDeleted;
 //---------------------------------------------------------------------------
 __fastcall TForm3::TForm3(TComponent* Owner): TForm(Owner)
 {
@@ -38,130 +36,14 @@ void __fastcall TForm3::XO1Click(TObject *Sender)
 		//CurryPlayerTaste='o';
 		CurryPlayer->Caption =CurryPlayerTaste;
 		XO1->Enabled = False;
-		int valueToBeDeleted = 1;
-		auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		listaP髄.erase(it);
-		number = listaP髄.size();
-		srand(time(NULL));
-		sqX = rand() % number;
-		ruchComp = listaP髄[sqX];
-		if (ruchComp == 1)
-		{
-		 sq1 = 'o';
-		 XO1->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
-		 XO1->Enabled = False;
-		 int valueToBeDeleted = 1;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
-		 {
-			listaP髄.erase(it);
-		 }
-		}
-		 if (ruchComp == 2)
-		{
-		sq2 = 'o';
-		 XO2->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
-		 XO2->Enabled = False;
-		 int valueToBeDeleted = 2;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
-		 {
-			listaP髄.erase(it);
-		 }
-		}
-		 if (ruchComp == 3)
-		{
-		sq3 = 'o';
-		 XO3->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
-		 XO3->Enabled = False;
-		 int valueToBeDeleted = 3;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
-		 {
-			listaP髄.erase(it);
-		 }
-		}
-		 if (ruchComp == 4)
-		{
-		 sq4 = 'o';
-		 XO4->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
-		 XO4->Enabled = False;
-		 int valueToBeDeleted = 4;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
-		 {
-			listaP髄.erase(it);
-		 }
-		}
-		 if (ruchComp == 5)
-		{
-		sq5 = 'o';
-		 XO5->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
-		 XO5->Enabled = False;
-		 int valueToBeDeleted = 5;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
-		 {
-			listaP髄.erase(it);
-		 }
-		}
-		 if (ruchComp == 6)
-		{
-		sq6 = 'o';
-		 XO6->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
-		 XO6->Enabled = False;
-		 int valueToBeDeleted = 6;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
-		 {
-			listaP髄.erase(it);
-		 }
-		}
-		 if (ruchComp == 7)
-		{
-		sq7 = 'o';
-		 XO7->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
-		 XO7->Enabled = False;
-		 int valueToBeDeleted = 7;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
-		 {
-			listaP髄.erase(it);
-		 }
-		}
-		 if (ruchComp == 8)
-		{
-		sq8 = 'o';
-		 XO8->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
-		 XO8->Enabled = False;
-		 int valueToBeDeleted = 8;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
-		 {
-			listaP髄.erase(it);
-		 }
-		}
-		 if (ruchComp == 9)
-		{
-		sq9 = 'o';
-		 XO9->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
-		 XO9->Enabled = False;
-         int valueToBeDeleted = 9;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
-		 {
-			listaP髄.erase(it);
-		 }
-		}
-
-			 if(CheckWinCondition()==1)
+		if(CheckWinCondition()==1)
 	 {
 				if (sq1 == 'x')
 				{
 						Wyniki -> Caption="Wygral X!!! ";
 						return;
 				}
-
+				if (sq3 == 'o')
 				{
 					Wyniki -> Caption="Wygral O!!! ";
 						return;
@@ -172,6 +54,146 @@ void __fastcall TForm3::XO1Click(TObject *Sender)
 		Wyniki -> Caption="REMIS";
 		return;
 	 }
+	 }
+		int valueToBeDeleted = 1;
+		auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		listaP贸l.erase(it);
+		number = listaP贸l.size();
+		srand(time(NULL));
+		if (listaP贸l.size() != 0)
+		{
+		  sqX = rand() % number;
+		}
+		else
+		{
+         sqX = 90;
+		}
+		ruchComp = listaP贸l[sqX];
+		if (ruchComp == 1 && CheckWinCondition()!=2)
+		{
+		 sq1 = 'o';
+		 XO1->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		 XO1->Enabled = False;
+		 int valueToBeDeleted = 1;
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
+		 {
+			listaP贸l.erase(it);
+		 }
+		}
+		 if (ruchComp == 2 && CheckWinCondition()!=2)
+		{
+		sq2 = 'o';
+		 XO2->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		 XO2->Enabled = False;
+		 int valueToBeDeleted = 2;
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
+		 {
+			listaP贸l.erase(it);
+		 }
+		}
+		 if (ruchComp == 3 && CheckWinCondition()!=2)
+		{
+		sq3 = 'o';
+		 XO3->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		 XO3->Enabled = False;
+		 int valueToBeDeleted = 3;
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
+		 {
+			listaP贸l.erase(it);
+		 }
+		}
+		 if (ruchComp == 4 && CheckWinCondition()!=2)
+		{
+		 sq4 = 'o';
+		 XO4->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		 XO4->Enabled = False;
+		 int valueToBeDeleted = 4;
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
+		 {
+			listaP贸l.erase(it);
+		 }
+		}
+		 if (ruchComp == 5 && CheckWinCondition()!=2)
+		{
+		sq5 = 'o';
+		 XO5->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		 XO5->Enabled = False;
+		 int valueToBeDeleted = 5;
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
+		 {
+			listaP贸l.erase(it);
+		 }
+		}
+		 if (ruchComp == 6 && CheckWinCondition()!=2)
+		{
+		sq6 = 'o';
+		 XO6->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		 XO6->Enabled = False;
+		 int valueToBeDeleted = 6;
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
+		 {
+			listaP贸l.erase(it);
+		 }
+		}
+		 if (ruchComp == 7 && CheckWinCondition()!=2)
+		{
+		sq7 = 'o';
+		 XO7->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		 XO7->Enabled = False;
+		 int valueToBeDeleted = 7;
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
+		 {
+			listaP贸l.erase(it);
+		 }
+		}
+		 if (ruchComp == 8 && CheckWinCondition()!=2)
+		{
+		sq8 = 'o';
+		 XO8->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		 XO8->Enabled = False;
+		 int valueToBeDeleted = 8;
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
+		 {
+			listaP贸l.erase(it);
+		 }
+		}
+		 if (ruchComp == 9 && CheckWinCondition()!=2)
+		{
+		sq9 = 'o';
+		 XO9->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		 XO9->Enabled = False;
+         int valueToBeDeleted = 9;
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
+		 {
+			listaP贸l.erase(it);
+		 }
+		}
+        	if(CheckWinCondition()==1)
+	 {
+				if (sq5 == 'x')
+				{
+						Wyniki -> Caption="Wygral X!!! ";
+						return;
+				}
+				if (sq5 == 'o')
+				{
+					Wyniki -> Caption="Wygral O!!! ";
+						return;
+				}
+	 }
+	  if(CheckWinCondition()==2)
+	 {
+		Wyniki -> Caption="REMIS";
+		return;
 	 }
  }
 void __fastcall TForm3::XO2Click(TObject *Sender)
@@ -183,122 +205,14 @@ void __fastcall TForm3::XO2Click(TObject *Sender)
 		//CurryPlayerTaste='o';
 		CurryPlayer->Caption =CurryPlayerTaste;
 		XO2->Enabled = False;
-        int valueToBeDelted = 2;
-		auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		listaP髄.erase(it);
-		number = listaP髄.size();
-		srand(time(NULL));
-		sqX = rand() % number;
-		ruchComp = listaP髄[sqX];
-		if (ruchComp == 1)
-		{
-		 XO1->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
-		 XO1->Enabled = False;
-		 int valueToBeDeleted = 1;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
-		 {
-			listaP髄.erase(it);
-		 }
-		}
-		 if (ruchComp == 2)
-		{
-		 XO2->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
-		 XO2->Enabled = False;
-		 int valueToBeDeleted = 2;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
-		 {
-			listaP髄.erase(it);
-		 }
-		}
-		 if (ruchComp == 3)
-		{
-		 XO3->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
-		 XO3->Enabled = False;
-		 int valueToBeDeleted = 3;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
-		 {
-			listaP髄.erase(it);
-		 }
-		}
-		 if (ruchComp == 4)
-		{
-		 XO4->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
-		 XO4->Enabled = False;
-		 int valueToBeDeleted = 4;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
-		 {
-			listaP髄.erase(it);
-		 }
-		}
-		 if (ruchComp == 5)
-		{
-		 XO5->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
-		 XO5->Enabled = False;
-		 int valueToBeDeleted = 5;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
-		 {
-			listaP髄.erase(it);
-		 }
-		}
-		 if (ruchComp == 6)
-		{
-		 XO6->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
-		 XO6->Enabled = False;
-		 int valueToBeDeleted = 6;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
-		 {
-			listaP髄.erase(it);
-		 }
-		}
-		 if (ruchComp == 7)
-		{
-		 XO7->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
-		 XO7->Enabled = False;
-		 int valueToBeDeleted = 7;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
-		 {
-			listaP髄.erase(it);
-		 }
-		}
-		 if (ruchComp == 8)
-		{
-		 XO8->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
-		 XO8->Enabled = False;
-		 int valueToBeDeleted = 8;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
-		 {
-			listaP髄.erase(it);
-		 }
-		}
-		 if (ruchComp == 9)
-		{
-		 XO9->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
-		 XO9->Enabled = False;
-		 int valueToBeDeleted = 9;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
-		 {
-			listaP髄.erase(it);
-		 }
-		}
-
-
-		 if(CheckWinCondition()==1)
+		if(CheckWinCondition()==1)
 	 {
-						if (sq2 == 'x')
+				if (sq2 == 'x')
 				{
 						Wyniki -> Caption="Wygral X!!! ";
 						return;
 				}
-
+				if (sq2 == 'o')
 				{
 					Wyniki -> Caption="Wygral O!!! ";
 						return;
@@ -309,6 +223,146 @@ void __fastcall TForm3::XO2Click(TObject *Sender)
 		Wyniki -> Caption="REMIS";
 		return;
 	 }
+	 }
+		int valueToBeDeleted = 2;
+		auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		listaP贸l.erase(it);
+		number = listaP贸l.size();
+		srand(time(NULL));
+		if (listaP贸l.size() != 0)
+		{
+		  sqX = rand() % number;
+		}
+		else
+		{
+		 sqX = 90;
+		}
+		ruchComp = listaP贸l[sqX];
+		if (ruchComp == 1 && CheckWinCondition()!=2)
+		{
+		 sq1 = 'o';
+		 XO1->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		 XO1->Enabled = False;
+		 int valueToBeDeleted = 1;
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
+		 {
+			listaP贸l.erase(it);
+		 }
+		}
+		 if (ruchComp == 2 && CheckWinCondition()!=2)
+		{
+		 sq2 = 'o';
+		 XO2->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		 XO2->Enabled = False;
+		 int valueToBeDeleted = 2;
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
+		 {
+			listaP贸l.erase(it);
+		 }
+		}
+		 if (ruchComp == 3 && CheckWinCondition()!=2)
+		{
+		 sq3 = 'o';
+		 XO3->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		 XO3->Enabled = False;
+		 int valueToBeDeleted = 3;
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
+		 {
+			listaP贸l.erase(it);
+		 }
+		}
+		 if (ruchComp == 4 && CheckWinCondition()!=2)
+		{
+		 sq4 = 'o';
+		 XO4->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		 XO4->Enabled = False;
+		 int valueToBeDeleted = 4;
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
+		 {
+			listaP贸l.erase(it);
+		 }
+		}
+		 if (ruchComp == 5 && CheckWinCondition()!=2)
+		{
+		 sq5 = 'o';
+		 XO5->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		 XO5->Enabled = False;
+		 int valueToBeDeleted = 5;
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
+		 {
+			listaP贸l.erase(it);
+		 }
+		}
+		 if (ruchComp == 6 && CheckWinCondition()!=2)
+		{
+		 sq6 = 'o';
+		 XO6->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		 XO6->Enabled = False;
+		 int valueToBeDeleted = 6;
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
+		 {
+			listaP贸l.erase(it);
+		 }
+		}
+		 if (ruchComp == 7 && CheckWinCondition()!=2)
+		{
+		 sq7 = 'o';
+		 XO7->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		 XO7->Enabled = False;
+		 int valueToBeDeleted = 7;
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
+		 {
+			listaP贸l.erase(it);
+		 }
+		}
+		 if (ruchComp == 8 && CheckWinCondition()!=2)
+		{
+		 sq8 = 'o';
+		 XO8->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		 XO8->Enabled = False;
+		 int valueToBeDeleted = 8;
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
+		 {
+			listaP贸l.erase(it);
+		 }
+		}
+		 if (ruchComp == 9 && CheckWinCondition()!=2)
+		{
+		 sq9 = 'o';
+		 XO9->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		 XO9->Enabled = False;
+		 int valueToBeDeleted = 9;
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
+		 {
+			listaP贸l.erase(it);
+		 }
+		}
+        	if(CheckWinCondition()==1)
+	 {
+				if (sq5 == 'x')
+				{
+						Wyniki -> Caption="Wygral X!!! ";
+						return;
+				}
+				if (sq5 == 'o')
+				{
+					Wyniki -> Caption="Wygral O!!! ";
+						return;
+				}
+	 }
+	  if(CheckWinCondition()==2)
+	 {
+		Wyniki -> Caption="REMIS";
+		return;
 	 }
 }
 void __fastcall TForm3::XO3Click(TObject *Sender)
@@ -320,122 +374,14 @@ void __fastcall TForm3::XO3Click(TObject *Sender)
 		//CurryPlayerTaste='o';
 		CurryPlayer->Caption =CurryPlayerTaste;
 		XO3->Enabled = False;
-		int valueToBeDelted = 3;
-		auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		listaP髄.erase(it);
-		number = listaP髄.size();
-		srand(time(NULL));
-		sqX = rand() % number;
-		ruchComp = listaP髄[sqX];
-		if (ruchComp == 1)
-		{
-		 XO1->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
-		 XO1->Enabled = False;
-		 int valueToBeDeleted = 1;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
-		 {
-			listaP髄.erase(it);
-		 }
-		}
-		 if (ruchComp == 2)
-		{
-		 XO2->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
-		 XO2->Enabled = False;
-		 int valueToBeDeleted = 2;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
-		 {
-			listaP髄.erase(it);
-		 }
-		}
-		 if (ruchComp == 3)
-		{
-		 XO3->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
-		 XO3->Enabled = False;
-		 int valueToBeDeleted = 3;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
-		 {
-			listaP髄.erase(it);
-		 }
-		}
-		 if (ruchComp == 4)
-		{
-		 XO4->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
-		 XO4->Enabled = False;
-		 int valueToBeDeleted = 4;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
-		 {
-			listaP髄.erase(it);
-		 }
-		}
-		 if (ruchComp == 5)
-		{
-		 XO5->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
-		 XO5->Enabled = False;
-		 int valueToBeDeleted = 5;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
-		 {
-			listaP髄.erase(it);
-		 }
-		}
-		 if (ruchComp == 6)
-		{
-		 XO6->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
-		 XO6->Enabled = False;
-		 int valueToBeDeleted = 6;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
-		 {
-			listaP髄.erase(it);
-		 }
-		}
-		 if (ruchComp == 7)
-		{
-		 XO7->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
-		 XO7->Enabled = False;
-		 int valueToBeDeleted = 7;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
-		 {
-			listaP髄.erase(it);
-		 }
-		}
-		 if (ruchComp == 8)
-		{
-		 XO8->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
-		 XO8->Enabled = False;
-		 int valueToBeDeleted = 8;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
-		 {
-			listaP髄.erase(it);
-		 }
-		}
-		 if (ruchComp == 9)
-		{
-		 XO9->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
-		 XO9->Enabled = False;
-         int valueToBeDeleted = 9;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
-		 {
-			listaP髄.erase(it);
-		 }
-		}
-
-
-		 if(CheckWinCondition()==1)
+		if(CheckWinCondition()==1)
 	 {
-						if (sq3 == 'x')
+				if (sq3 == 'x')
 				{
 						Wyniki -> Caption="Wygral X!!! ";
 						return;
 				}
-
+				if (sq3 == 'o')
 				{
 					Wyniki -> Caption="Wygral O!!! ";
 						return;
@@ -446,6 +392,146 @@ void __fastcall TForm3::XO3Click(TObject *Sender)
 		Wyniki -> Caption="REMIS";
 		return;
 	 }
+	 }
+		int valueToBeDeleted = 3;
+		auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		listaP贸l.erase(it);
+		number = listaP贸l.size();
+		srand(time(NULL));
+		if (listaP贸l.size() != 0)
+		{
+		  sqX = rand() % number;
+		}
+		else
+		{
+		 sqX = 90;
+		}
+		ruchComp = listaP贸l[sqX];
+		if (ruchComp == 1 && CheckWinCondition()!=2)
+		{
+		 sq1 = 'o';
+		 XO1->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		 XO1->Enabled = False;
+		 int valueToBeDeleted = 1;
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
+		 {
+			listaP贸l.erase(it);
+		 }
+		}
+		 if (ruchComp == 2 && CheckWinCondition()!=2)
+		{
+		 sq2 = 'o';
+		 XO2->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		 XO2->Enabled = False;
+		 int valueToBeDeleted = 2;
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
+		 {
+			listaP贸l.erase(it);
+		 }
+		}
+		 if (ruchComp == 3 && CheckWinCondition()!=2)
+		{
+		 sq3 = 'o';
+		 XO3->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		 XO3->Enabled = False;
+		 int valueToBeDeleted = 3;
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
+		 {
+			listaP贸l.erase(it);
+		 }
+		}
+		 if (ruchComp == 4 && CheckWinCondition()!=2)
+		{
+		 sq4 = 'o';
+		 XO4->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		 XO4->Enabled = False;
+		 int valueToBeDeleted = 4;
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
+		 {
+			listaP贸l.erase(it);
+		 }
+		}
+		 if (ruchComp == 5 && CheckWinCondition()!=2)
+		{
+		 sq5 = 'o';
+		 XO5->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		 XO5->Enabled = False;
+		 int valueToBeDeleted = 5;
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
+		 {
+			listaP贸l.erase(it);
+		 }
+		}
+		 if (ruchComp == 6 && CheckWinCondition()!=2)
+		{
+		 sq6 = 'o';
+		 XO6->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		 XO6->Enabled = False;
+		 int valueToBeDeleted = 6;
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
+		 {
+			listaP贸l.erase(it);
+		 }
+		}
+		 if (ruchComp == 7 && CheckWinCondition()!=2)
+		{
+		 sq7 = 'o';
+		 XO7->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		 XO7->Enabled = False;
+		 int valueToBeDeleted = 7;
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
+		 {
+			listaP贸l.erase(it);
+		 }
+		}
+		 if (ruchComp == 8 && CheckWinCondition()!=2)
+		{
+		 sq8 = 'o';
+		 XO8->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		 XO8->Enabled = False;
+		 int valueToBeDeleted = 8;
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
+		 {
+			listaP贸l.erase(it);
+		 }
+		}
+		 if (ruchComp == 9 && CheckWinCondition()!=2)
+		{
+		 sq9 = 'o';
+		 XO9->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		 XO9->Enabled = False;
+		 int valueToBeDeleted = 9;
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
+		 {
+			listaP贸l.erase(it);
+		 }
+		}
+        	if(CheckWinCondition()==1)
+	 {
+				if (sq5 == 'x')
+				{
+						Wyniki -> Caption="Wygral X!!! ";
+						return;
+				}
+				if (sq5 == 'o')
+				{
+					Wyniki -> Caption="Wygral O!!! ";
+						return;
+				}
+	 }
+	  if(CheckWinCondition()==2)
+	 {
+		Wyniki -> Caption="REMIS";
+		return;
 	 }
 }
 void __fastcall TForm3::XO4Click(TObject *Sender)
@@ -457,123 +543,14 @@ void __fastcall TForm3::XO4Click(TObject *Sender)
 		//CurryPlayerTaste='o';
 		CurryPlayer->Caption =CurryPlayerTaste;
 		XO4->Enabled = False;
-		int valueToBeDelted = 4;
-		auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		listaP髄.erase(it);
-		number = listaP髄.size();
-		srand(time(NULL));
-		sqX = rand() % number;
-		ruchComp = listaP髄[sqX];
-		if (ruchComp == 1)
-		{
-		 XO1->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
-		 XO1->Enabled = False;
-		 int valueToBeDeleted = 1;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
-		 {
-			listaP髄.erase(it);
-		 }
-		}
-		 if (ruchComp == 2)
-		{
-		 XO2->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
-		 XO2->Enabled = False;
-		 int valueToBeDeleted = 2;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
-		 {
-			listaP髄.erase(it);
-		 }
-		}
-		 if (ruchComp == 3)
-		{
-		 XO3->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
-		 XO3->Enabled = False;
-		 int valueToBeDeleted = 3;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
-		 {
-			listaP髄.erase(it);
-		 }
-		}
-		 if (ruchComp == 4)
-		{
-		 XO4->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
-		 XO4->Enabled = False;
-		 int valueToBeDeleted = 4;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
-		 {
-			listaP髄.erase(it);
-		 }
-		}
-		 if (ruchComp == 5)
-		{
-		 XO5->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
-		 XO5->Enabled = False;
-		 int valueToBeDeleted = 5;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
-		 {
-			listaP髄.erase(it);
-		 }
-		}
-		 if (ruchComp == 6)
-		{
-		 XO6->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
-		 XO6->Enabled = False;
-		 int valueToBeDeleted = 6;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
-		 {
-			listaP髄.erase(it);
-		 }
-		}
-		 if (ruchComp == 7)
-		{
-		 XO7->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
-		 XO7->Enabled = False;
-		 int valueToBeDeleted = 7;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
-		 {
-			listaP髄.erase(it);
-		 }
-		}
-		 if (ruchComp == 8)
-		{
-		 XO8->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
-		 XO8->Enabled = False;
-		 int valueToBeDeleted = 8;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
-		 {
-			listaP髄.erase(it);
-		 }
-		}
-		 if (ruchComp == 9)
-		{
-		 XO9->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
-		 XO9->Enabled = False;
-         int valueToBeDeleted = 9;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
-		 {
-			listaP髄.erase(it);
-		 }
-		}
-
-
-
-		 if(CheckWinCondition()==1)
+		if(CheckWinCondition()==1)
 	 {
-						if (sq4 == 'x')
+				if (sq4 == 'x')
 				{
 						Wyniki -> Caption="Wygral X!!! ";
 						return;
 				}
-
+				if (sq4 == 'o')
 				{
 					Wyniki -> Caption="Wygral O!!! ";
 						return;
@@ -584,6 +561,146 @@ void __fastcall TForm3::XO4Click(TObject *Sender)
 		Wyniki -> Caption="REMIS";
 		return;
 	 }
+	 }
+		int valueToBeDeleted = 4;
+		auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		listaP贸l.erase(it);
+		number = listaP贸l.size();
+		srand(time(NULL));
+		if (listaP贸l.size() != 0)
+		{
+		  sqX = rand() % number;
+		}
+		else
+		{
+		 sqX = 90;
+		}
+		ruchComp = listaP贸l[sqX];
+		if (ruchComp == 1 && CheckWinCondition()!=2)
+		{
+		 sq1 = 'o';
+		 XO1->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		 XO1->Enabled = False;
+		 int valueToBeDeleted = 1;
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
+		 {
+			listaP贸l.erase(it);
+		 }
+		}
+		 if (ruchComp == 2 && CheckWinCondition()!=2)
+		{
+		 sq2 = 'o';
+		 XO2->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		 XO2->Enabled = False;
+		 int valueToBeDeleted = 2;
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
+		 {
+			listaP贸l.erase(it);
+		 }
+		}
+		 if (ruchComp == 3 && CheckWinCondition()!=2)
+		{
+		 sq3 = 'o';
+		 XO3->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		 XO3->Enabled = False;
+		 int valueToBeDeleted = 3;
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
+		 {
+			listaP贸l.erase(it);
+		 }
+		}
+		 if (ruchComp == 4 && CheckWinCondition()!=2)
+		{
+		 sq4 = 'o';
+		 XO4->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		 XO4->Enabled = False;
+		 int valueToBeDeleted = 4;
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
+		 {
+			listaP贸l.erase(it);
+		 }
+		}
+		 if (ruchComp == 5 && CheckWinCondition()!=2)
+		{
+		 sq5 = 'o';
+		 XO5->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		 XO5->Enabled = False;
+		 int valueToBeDeleted = 5;
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
+		 {
+			listaP贸l.erase(it);
+		 }
+		}
+		 if (ruchComp == 6 && CheckWinCondition()!=2)
+		{
+		 sq6 = 'o';
+		 XO6->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		 XO6->Enabled = False;
+		 int valueToBeDeleted = 6;
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
+		 {
+			listaP贸l.erase(it);
+		 }
+		}
+		 if (ruchComp == 7 && CheckWinCondition()!=2)
+		{
+		 sq7 = 'o';
+		 XO7->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		 XO7->Enabled = False;
+		 int valueToBeDeleted = 7;
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
+		 {
+			listaP贸l.erase(it);
+		 }
+		}
+		 if (ruchComp == 8 && CheckWinCondition()!=2)
+		{
+		 sq8 = 'o';
+		 XO8->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		 XO8->Enabled = False;
+		 int valueToBeDeleted = 8;
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
+		 {
+			listaP贸l.erase(it);
+		 }
+		}
+		 if (ruchComp == 9 && CheckWinCondition()!=2)
+		{
+		 sq9 = 'o';
+		 XO9->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		 XO9->Enabled = False;
+		 int valueToBeDeleted = 9;
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
+		 {
+			listaP贸l.erase(it);
+		 }
+		}
+        	if(CheckWinCondition()==1)
+	 {
+				if (sq5 == 'x')
+				{
+						Wyniki -> Caption="Wygral X!!! ";
+						return;
+				}
+				if (sq5 == 'o')
+				{
+					Wyniki -> Caption="Wygral O!!! ";
+						return;
+				}
+	 }
+	  if(CheckWinCondition()==2)
+	 {
+		Wyniki -> Caption="REMIS";
+		return;
 	 }
 }
 void __fastcall TForm3::XO5Click(TObject *Sender)
@@ -595,122 +712,14 @@ void __fastcall TForm3::XO5Click(TObject *Sender)
 		//CurryPlayerTaste='o';
 		CurryPlayer->Caption =CurryPlayerTaste;
 		XO5->Enabled = False;
-		int valueToBeDelted = 5;
-		auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		listaP髄.erase(it);
-		number = listaP髄.size();
-		srand(time(NULL));
-		sqX = rand() % number;
-		ruchComp = listaP髄[sqX];
-		if (ruchComp == 1)
-		{
-		 XO1->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
-		 XO1->Enabled = False;
-		 int valueToBeDeleted = 1;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
-		 {
-			listaP髄.erase(it);
-		 }
-		}
-		 if (ruchComp == 2)
-		{
-		 XO2->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
-		 XO2->Enabled = False;
-		 int valueToBeDeleted = 2;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
-		 {
-			listaP髄.erase(it);
-		 }
-		}
-		 if (ruchComp == 3)
-		{
-		 XO3->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
-		 XO3->Enabled = False;
-		 int valueToBeDeleted = 3;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
-		 {
-			listaP髄.erase(it);
-		 }
-		}
-		 if (ruchComp == 4)
-		{
-		 XO4->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
-		 XO4->Enabled = False;
-		 int valueToBeDeleted = 4;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
-		 {
-			listaP髄.erase(it);
-		 }
-		}
-		 if (ruchComp == 5)
-		{
-		 XO5->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
-		 XO5->Enabled = False;
-		 int valueToBeDeleted = 5;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
-		 {
-			listaP髄.erase(it);
-		 }
-		}
-		 if (ruchComp == 6)
-		{
-		 XO6->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
-		 XO6->Enabled = False;
-		 int valueToBeDeleted = 6;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
-		 {
-			listaP髄.erase(it);
-		 }
-		}
-		 if (ruchComp == 7)
-		{
-		 XO7->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
-		 XO7->Enabled = False;
-		 int valueToBeDeleted = 7;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
-		 {
-			listaP髄.erase(it);
-		 }
-		}
-		 if (ruchComp == 8)
-		{
-		 XO8->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
-		 XO8->Enabled = False;
-		 int valueToBeDeleted = 8;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
-		 {
-			listaP髄.erase(it);
-		 }
-		}
-		 if (ruchComp == 9)
-		{
-		 XO9->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
-		 XO9->Enabled = False;
-         int valueToBeDeleted = 9;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
-		 {
-			listaP髄.erase(it);
-		 }
-		}
-
-
-		 if(CheckWinCondition()==1)
+		if(CheckWinCondition()==1)
 	 {
-					if (sq5 == 'x')
+				if (sq5 == 'x')
 				{
 						Wyniki -> Caption="Wygral X!!! ";
 						return;
 				}
-
+				if (sq5 == 'o')
 				{
 					Wyniki -> Caption="Wygral O!!! ";
 						return;
@@ -722,6 +731,146 @@ void __fastcall TForm3::XO5Click(TObject *Sender)
 		return;
 	 }
 	 }
+		int valueToBeDeleted = 5;
+		auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		listaP贸l.erase(it);
+		number = listaP贸l.size();
+		srand(time(NULL));
+		if (listaP贸l.size() != 0)
+		{
+		  sqX = rand() % number;
+		}
+		else
+		{
+		 sqX = 90;
+		}
+		ruchComp = listaP贸l[sqX];
+		if (ruchComp == 1 && CheckWinCondition()!=2)
+		{
+		 sq1 = 'o';
+		 XO1->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		 XO1->Enabled = False;
+		 int valueToBeDeleted = 1;
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
+		 {
+			listaP贸l.erase(it);
+		 }
+		}
+		 if (ruchComp == 2 && CheckWinCondition()!=2)
+		{
+		 sq2 = 'o';
+		 XO2->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		 XO2->Enabled = False;
+		 int valueToBeDeleted = 2;
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
+		 {
+			listaP贸l.erase(it);
+		 }
+		}
+		 if (ruchComp == 3 && CheckWinCondition()!=2)
+		{
+		 sq3 = 'o';
+		 XO3->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		 XO3->Enabled = False;
+		 int valueToBeDeleted = 3;
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
+		 {
+			listaP贸l.erase(it);
+		 }
+		}
+		 if (ruchComp == 4 && CheckWinCondition()!=2)
+		{
+		 sq4 = 'o';
+		 XO4->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		 XO4->Enabled = False;
+		 int valueToBeDeleted = 4;
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
+		 {
+			listaP贸l.erase(it);
+		 }
+		}
+		 if (ruchComp == 5 && CheckWinCondition()!=2)
+		{
+		 sq5 = 'o';
+		 XO5->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		 XO5->Enabled = False;
+		 int valueToBeDeleted = 5;
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
+		 {
+			listaP贸l.erase(it);
+		 }
+		}
+		 if (ruchComp == 6 && CheckWinCondition()!=2)
+		{
+		 sq6 = 'o';
+		 XO6->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		 XO6->Enabled = False;
+		 int valueToBeDeleted = 6;
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
+		 {
+			listaP贸l.erase(it);
+		 }
+		}
+		 if (ruchComp == 7 && CheckWinCondition()!=2)
+		{
+		 sq7 = 'o';
+		 XO7->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		 XO7->Enabled = False;
+		 int valueToBeDeleted = 7;
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
+		 {
+			listaP贸l.erase(it);
+		 }
+		}
+		 if (ruchComp == 8 && CheckWinCondition()!=2)
+		{
+		 sq8 = 'o';
+		 XO8->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		 XO8->Enabled = False;
+		 int valueToBeDeleted = 8;
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
+		 {
+			listaP贸l.erase(it);
+		 }
+		}
+		 if (ruchComp == 9 && CheckWinCondition()!=2)
+		{
+		 sq9 = 'o';
+		 XO9->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		 XO9->Enabled = False;
+		 int valueToBeDeleted = 9;
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
+		 {
+			listaP贸l.erase(it);
+		 }
+		}
+        	if(CheckWinCondition()==1)
+	 {
+				if (sq5 == 'x')
+				{
+						Wyniki -> Caption="Wygral X!!! ";
+						return;
+				}
+				if (sq5 == 'o')
+				{
+					Wyniki -> Caption="Wygral O!!! ";
+						return;
+				}
+	 }
+	  if(CheckWinCondition()==2)
+	 {
+		Wyniki -> Caption="REMIS";
+		return;
+	 }
 }
 void __fastcall TForm3::XO6Click(TObject *Sender)
 {
@@ -732,123 +881,14 @@ void __fastcall TForm3::XO6Click(TObject *Sender)
 		//CurryPlayerTaste='o';
 		CurryPlayer->Caption =CurryPlayerTaste;
 		XO6->Enabled = False;
-		int valueToBeDelted = 6;
-		auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		listaP髄.erase(it);
-		number = listaP髄.size();
-		srand(time(NULL));
-		sqX = rand() % number;
-		ruchComp = listaP髄[sqX];
-		if (ruchComp == 1)
-		{
-		 XO1->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
-		 XO1->Enabled = False;
-		 int valueToBeDeleted = 1;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
-		 {
-			listaP髄.erase(it);
-		 }
-		}
-		 if (ruchComp == 2)
-		{
-		 XO2->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
-		 XO2->Enabled = False;
-		 int valueToBeDeleted = 2;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
-		 {
-			listaP髄.erase(it);
-		 }
-		}
-		 if (ruchComp == 3)
-		{
-		 XO3->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
-		 XO3->Enabled = False;
-		 int valueToBeDeleted = 3;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
-		 {
-			listaP髄.erase(it);
-		 }
-		}
-		 if (ruchComp == 4)
-		{
-		 XO4->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
-		 XO4->Enabled = False;
-		 int valueToBeDeleted = 4;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
-		 {
-			listaP髄.erase(it);
-		 }
-		}
-		 if (ruchComp == 5)
-		{
-		 XO5->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
-		 XO5->Enabled = False;
-		 int valueToBeDeleted = 5;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
-		 {
-			listaP髄.erase(it);
-		 }
-		}
-		 if (ruchComp == 6)
-		{
-		 XO6->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
-		 XO6->Enabled = False;
-		 int valueToBeDeleted = 6;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
-		 {
-			listaP髄.erase(it);
-		 }
-		}
-		 if (ruchComp == 7)
-		{
-		 XO7->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
-		 XO7->Enabled = False;
-		 int valueToBeDeleted = 7;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
-		 {
-			listaP髄.erase(it);
-		 }
-		}
-		 if (ruchComp == 8)
-		{
-		 XO8->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
-		 XO8->Enabled = False;
-		 int valueToBeDeleted = 8;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
-		 {
-			listaP髄.erase(it);
-		 }
-		}
-		 if (ruchComp == 9)
-		{
-		 XO9->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
-		 XO9->Enabled = False;
-         int valueToBeDeleted = 9;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
-		 {
-			listaP髄.erase(it);
-		 }
-		}
-
-
-
-		 if(CheckWinCondition()==1)
+		if(CheckWinCondition()==1)
 	 {
-						if (sq6 == 'x')
+				if (sq6 == 'x')
 				{
 						Wyniki -> Caption="Wygral X!!! ";
 						return;
 				}
-
+				if (sq6 == 'o')
 				{
 					Wyniki -> Caption="Wygral O!!! ";
 						return;
@@ -856,9 +896,149 @@ void __fastcall TForm3::XO6Click(TObject *Sender)
 	 }
 	  if(CheckWinCondition()==2)
 	 {
-		Wyniki -> Caption="REMIS",CurryPlayerTaste;
+		Wyniki -> Caption="REMIS";
 		return;
 	 }
+	 }
+		int valueToBeDeleted = 6;
+		auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		listaP贸l.erase(it);
+		number = listaP贸l.size();
+		srand(time(NULL));
+		if (listaP贸l.size() != 0)
+		{
+		  sqX = rand() % number;
+		}
+		else
+		{
+         sqX = 90;
+		}
+		ruchComp = listaP贸l[sqX];
+		if (ruchComp == 1 && CheckWinCondition()!=2)
+		{
+		 sq1 = 'o';
+		 XO1->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		 XO1->Enabled = False;
+		 int valueToBeDeleted = 1;
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
+		 {
+			listaP贸l.erase(it);
+		 }
+		}
+		 if (ruchComp == 2 && CheckWinCondition()!=2)
+		{
+		 sq2 = 'o';
+		 XO2->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		 XO2->Enabled = False;
+		 int valueToBeDeleted = 2;
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
+		 {
+			listaP贸l.erase(it);
+		 }
+		}
+		 if (ruchComp == 3 && CheckWinCondition()!=2)
+		{
+		 sq3 = 'o';
+		 XO3->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		 XO3->Enabled = False;
+		 int valueToBeDeleted = 3;
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
+		 {
+			listaP贸l.erase(it);
+		 }
+		}
+		 if (ruchComp == 4 && CheckWinCondition()!=2)
+		{
+		 sq4 = 'o';
+		 XO4->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		 XO4->Enabled = False;
+		 int valueToBeDeleted = 4;
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
+		 {
+			listaP贸l.erase(it);
+		 }
+		}
+		 if (ruchComp == 5 && CheckWinCondition()!=2)
+		{
+		 sq5 = 'o';
+		 XO5->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		 XO5->Enabled = False;
+		 int valueToBeDeleted = 5;
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
+		 {
+			listaP贸l.erase(it);
+		 }
+		}
+		 if (ruchComp == 6 && CheckWinCondition()!=2)
+		{
+		 sq6 = 'o';
+		 XO6->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		 XO6->Enabled = False;
+		 int valueToBeDeleted = 6;
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
+		 {
+			listaP贸l.erase(it);
+		 }
+		}
+		 if (ruchComp == 7 && CheckWinCondition()!=2)
+		{
+		 sq7 = 'o';
+		 XO7->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		 XO7->Enabled = False;
+		 int valueToBeDeleted = 7;
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
+		 {
+			listaP贸l.erase(it);
+		 }
+		}
+		 if (ruchComp == 8 && CheckWinCondition()!=2)
+		{
+		 sq8 = 'o';
+		 XO8->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		 XO8->Enabled = False;
+		 int valueToBeDeleted = 8;
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
+		 {
+			listaP贸l.erase(it);
+		 }
+		}
+		 if (ruchComp == 9 && CheckWinCondition()!=2)
+		{
+		 sq9 = 'o';
+		 XO9->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		 XO9->Enabled = False;
+		 int valueToBeDeleted = 9;
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
+		 {
+			listaP贸l.erase(it);
+		 }
+		}
+        	if(CheckWinCondition()==1)
+	 {
+				if (sq5 == 'x')
+				{
+						Wyniki -> Caption="Wygral X!!! ";
+						return;
+				}
+				if (sq5 == 'o')
+				{
+					Wyniki -> Caption="Wygral O!!! ";
+						return;
+				}
+	 }
+	  if(CheckWinCondition()==2)
+	 {
+		Wyniki -> Caption="REMIS";
+		return;
 	 }
 }
 void __fastcall TForm3::XO9Click(TObject *Sender)
@@ -870,123 +1050,14 @@ void __fastcall TForm3::XO9Click(TObject *Sender)
 		//CurryPlayerTaste='o';
 		CurryPlayer->Caption =CurryPlayerTaste;
 		XO9->Enabled = False;
-		int valueToBeDelted = 9;
-		auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		listaP髄.erase(it);
-		number = listaP髄.size();
-		srand(time(NULL));
-		sqX = rand() % number;
-		ruchComp = listaP髄[sqX];
-		if (ruchComp == 1)
-		{
-		 XO1->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
-		 XO1->Enabled = False;
-		 int valueToBeDeleted = 1;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
-		 {
-			listaP髄.erase(it);
-		 }
-		}
-		 if (ruchComp == 2)
-		{
-		 XO2->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
-		 XO2->Enabled = False;
-		 int valueToBeDeleted = 2;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
-		 {
-			listaP髄.erase(it);
-		 }
-		}
-		 if (ruchComp == 3)
-		{
-		 XO3->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
-		 XO3->Enabled = False;
-		 int valueToBeDeleted = 3;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
-		 {
-			listaP髄.erase(it);
-		 }
-		}
-		 if (ruchComp == 4)
-		{
-		 XO4->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
-		 XO4->Enabled = False;
-		 int valueToBeDeleted = 4;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
-		 {
-			listaP髄.erase(it);
-		 }
-		}
-		 if (ruchComp == 5)
-		{
-		 XO5->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
-		 XO5->Enabled = False;
-		 int valueToBeDeleted = 5;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
-		 {
-			listaP髄.erase(it);
-		 }
-		}
-		 if (ruchComp == 6)
-		{
-		 XO6->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
-		 XO6->Enabled = False;
-		 int valueToBeDeleted = 6;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
-		 {
-			listaP髄.erase(it);
-		 }
-		}
-		 if (ruchComp == 7)
-		{
-		 XO7->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
-		 XO7->Enabled = False;
-		 int valueToBeDeleted = 7;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
-		 {
-			listaP髄.erase(it);
-		 }
-		}
-		 if (ruchComp == 8)
-		{
-		 XO8->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
-		 XO8->Enabled = False;
-		 int valueToBeDeleted = 8;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
-		 {
-			listaP髄.erase(it);
-		 }
-		}
-		 if (ruchComp == 9)
-		{
-		 XO9->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
-		 XO9->Enabled = False;
-         int valueToBeDeleted = 9;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
-		 {
-			listaP髄.erase(it);
-		 }
-		}
-
-
-
-		 if(CheckWinCondition()==1)
+		if(CheckWinCondition()==1)
 	 {
-						if (sq9 == 'x')
+				if (sq9 == 'x')
 				{
 						Wyniki -> Caption="Wygral X!!! ";
 						return;
 				}
-
+				if (sq9 == 'o')
 				{
 					Wyniki -> Caption="Wygral O!!! ";
 						return;
@@ -994,9 +1065,149 @@ void __fastcall TForm3::XO9Click(TObject *Sender)
 	 }
 	  if(CheckWinCondition()==2)
 	 {
-		Wyniki -> Caption="REMIS",CurryPlayerTaste;
+		Wyniki -> Caption="REMIS";
 		return;
 	 }
+	 }
+		int valueToBeDeleted = 9;
+		auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		listaP贸l.erase(it);
+		number = listaP贸l.size();
+		srand(time(NULL));
+		if (listaP贸l.size() != 0)
+		{
+		  sqX = rand() % number;
+		}
+		else
+		{
+		 sqX = 90;
+		}
+		ruchComp = listaP贸l[sqX];
+		if (ruchComp == 1 && CheckWinCondition()!=2)
+		{
+		 sq1 = 'o';
+		 XO1->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		 XO1->Enabled = False;
+		 int valueToBeDeleted = 1;
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
+		 {
+			listaP贸l.erase(it);
+		 }
+		}
+		 if (ruchComp == 2 && CheckWinCondition()!=2)
+		{
+		 sq2 = 'o';
+		 XO2->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		 XO2->Enabled = False;
+		 int valueToBeDeleted = 2;
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
+		 {
+			listaP贸l.erase(it);
+		 }
+		}
+		 if (ruchComp == 3 && CheckWinCondition()!=2)
+		{
+		 sq3 = 'o';
+		 XO3->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		 XO3->Enabled = False;
+		 int valueToBeDeleted = 3;
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
+		 {
+			listaP贸l.erase(it);
+		 }
+		}
+		 if (ruchComp == 4 && CheckWinCondition()!=2)
+		{
+		 sq4 = 'o';
+		 XO4->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		 XO4->Enabled = False;
+		 int valueToBeDeleted = 4;
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
+		 {
+			listaP贸l.erase(it);
+		 }
+		}
+		 if (ruchComp == 5 && CheckWinCondition()!=2)
+		{
+		 sq5 = 'o';
+		 XO5->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		 XO5->Enabled = False;
+		 int valueToBeDeleted = 5;
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
+		 {
+			listaP贸l.erase(it);
+		 }
+		}
+		 if (ruchComp == 6 && CheckWinCondition()!=2)
+		{
+		 sq6 = 'o';
+		 XO6->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		 XO6->Enabled = False;
+		 int valueToBeDeleted = 6;
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
+		 {
+			listaP贸l.erase(it);
+		 }
+		}
+		 if (ruchComp == 7 && CheckWinCondition()!=2)
+		{
+		 sq7 = 'o';
+		 XO7->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		 XO7->Enabled = False;
+		 int valueToBeDeleted = 7;
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
+		 {
+			listaP贸l.erase(it);
+		 }
+		}
+		 if (ruchComp == 8 && CheckWinCondition()!=2)
+		{
+		 sq8 = 'o';
+		 XO8->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		 XO8->Enabled = False;
+		 int valueToBeDeleted = 8;
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
+		 {
+			listaP贸l.erase(it);
+		 }
+		}
+		 if (ruchComp == 9 && CheckWinCondition()!=2)
+		{
+		 sq9 = 'o';
+		 XO9->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		 XO9->Enabled = False;
+		 int valueToBeDeleted = 9;
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
+		 {
+			listaP贸l.erase(it);
+		 }
+		}
+        	if(CheckWinCondition()==1)
+	 {
+				if (sq5 == 'x')
+				{
+						Wyniki -> Caption="Wygral X!!! ";
+						return;
+				}
+				if (sq5 == 'o')
+				{
+					Wyniki -> Caption="Wygral O!!! ";
+						return;
+				}
+	 }
+	  if(CheckWinCondition()==2)
+	 {
+		Wyniki -> Caption="REMIS";
+		return;
 	 }
 }
 void __fastcall TForm3::XO8Click(TObject *Sender)
@@ -1008,122 +1219,14 @@ void __fastcall TForm3::XO8Click(TObject *Sender)
 		//CurryPlayerTaste='o';
 		CurryPlayer->Caption =CurryPlayerTaste;
 		XO8->Enabled = False;
-		int valueToBeDelted = 8;
-		auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		listaP髄.erase(it);
-		number = listaP髄.size();
-		srand(time(NULL));
-		sqX = rand() % number;
-		ruchComp = listaP髄[sqX];
-		if (ruchComp == 1)
-		{
-		 XO1->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
-		 XO1->Enabled = False;
-		 int valueToBeDeleted = 1;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
-		 {
-			listaP髄.erase(it);
-		 }
-		}
-		 if (ruchComp == 2)
-		{
-		 XO2->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
-		 XO2->Enabled = False;
-		 int valueToBeDeleted = 2;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
-		 {
-			listaP髄.erase(it);
-		 }
-		}
-		 if (ruchComp == 3)
-		{
-		 XO3->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
-		 XO3->Enabled = False;
-		 int valueToBeDeleted = 3;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
-		 {
-			listaP髄.erase(it);
-		 }
-		}
-		 if (ruchComp == 4)
-		{
-		 XO4->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
-		 XO4->Enabled = False;
-		 int valueToBeDeleted = 4;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
-		 {
-			listaP髄.erase(it);
-		 }
-		}
-		 if (ruchComp == 5)
-		{
-		 XO5->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
-		 XO5->Enabled = False;
-		 int valueToBeDeleted = 5;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
-		 {
-			listaP髄.erase(it);
-		 }
-		}
-		 if (ruchComp == 6)
-		{
-		 XO6->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
-		 XO6->Enabled = False;
-		 int valueToBeDeleted = 6;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
-		 {
-			listaP髄.erase(it);
-		 }
-		}
-		 if (ruchComp == 7)
-		{
-		 XO7->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
-		 XO7->Enabled = False;
-		 int valueToBeDeleted = 7;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
-		 {
-			listaP髄.erase(it);
-		 }
-		}
-		 if (ruchComp == 8)
-		{
-		 XO8->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
-		 XO8->Enabled = False;
-		 int valueToBeDeleted = 8;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
-		 {
-			listaP髄.erase(it);
-		 }
-		}
-		 if (ruchComp == 9)
-		{
-		 XO9->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
-		 XO9->Enabled = False;
-         int valueToBeDeleted = 9;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
-		 {
-			listaP髄.erase(it);
-		 }
-		}
-
-
-		 if(CheckWinCondition()==1)
+        if(CheckWinCondition()==1)
 	 {
-						if (sq8 == 'x')
+				if (sq8 == 'x')
 				{
 						Wyniki -> Caption="Wygral X!!! ";
 						return;
 				}
-
+				if (sq8 == 'o')
 				{
 					Wyniki -> Caption="Wygral O!!! ";
 						return;
@@ -1131,9 +1234,149 @@ void __fastcall TForm3::XO8Click(TObject *Sender)
 	 }
 	  if(CheckWinCondition()==2)
 	 {
-		Wyniki -> Caption="REMIS",CurryPlayerTaste;
+		Wyniki -> Caption="REMIS";
 		return;
 	 }
+	 }
+		int valueToBeDeleted = 8;
+		auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		listaP贸l.erase(it);
+		number = listaP贸l.size();
+		srand(time(NULL));
+		if (listaP贸l.size() != 0)
+		{
+		  sqX = rand() % number;
+		}
+		else
+		{
+         sqX = 90;
+		}
+		ruchComp = listaP贸l[sqX];
+		if (ruchComp == 1 && CheckWinCondition()!=2)
+		{
+		 sq1 = 'o';
+		 XO1->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		 XO1->Enabled = False;
+		 int valueToBeDeleted = 1;
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
+		 {
+			listaP贸l.erase(it);
+		 }
+		}
+		 if (ruchComp == 2 && CheckWinCondition()!=2)
+		{
+		 sq2 = 'o';
+		 XO2->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		 XO2->Enabled = False;
+		 int valueToBeDeleted = 2;
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
+		 {
+			listaP贸l.erase(it);
+		 }
+		}
+		 if (ruchComp == 3 && CheckWinCondition()!=2)
+		{
+		 sq3 = 'o';
+		 XO3->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		 XO3->Enabled = False;
+		 int valueToBeDeleted = 3;
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
+		 {
+			listaP贸l.erase(it);
+		 }
+		}
+		 if (ruchComp == 4 && CheckWinCondition()!=2)
+		{
+		 sq4 = 'o';
+		 XO4->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		 XO4->Enabled = False;
+		 int valueToBeDeleted = 4;
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
+		 {
+			listaP贸l.erase(it);
+		 }
+		}
+		 if (ruchComp == 5 && CheckWinCondition()!=2)
+		{
+		 sq5 = 'o';
+		 XO5->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		 XO5->Enabled = False;
+		 int valueToBeDeleted = 5;
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
+		 {
+			listaP贸l.erase(it);
+		 }
+		}
+		 if (ruchComp == 6 && CheckWinCondition()!=2)
+		{
+		 sq6 = 'o';
+		 XO6->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		 XO6->Enabled = False;
+		 int valueToBeDeleted = 6;
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
+		 {
+			listaP贸l.erase(it);
+		 }
+		}
+		 if (ruchComp == 7 && CheckWinCondition()!=2)
+		{
+		 sq7 = 'o';
+		 XO7->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		 XO7->Enabled = False;
+		 int valueToBeDeleted = 7;
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
+		 {
+			listaP贸l.erase(it);
+		 }
+		}
+		 if (ruchComp == 8 && CheckWinCondition()!=2)
+		{
+		 sq8 = 'o';
+		 XO8->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		 XO8->Enabled = False;
+		 int valueToBeDeleted = 8;
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
+		 {
+			listaP贸l.erase(it);
+		 }
+		}
+		 if (ruchComp == 9 && CheckWinCondition()!=2)
+		{
+		 sq9 = 'o';
+		 XO9->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		 XO9->Enabled = False;
+		 int valueToBeDeleted = 9;
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
+		 {
+			listaP贸l.erase(it);
+		 }
+		}
+        	if(CheckWinCondition()==1)
+	 {
+				if (sq5 == 'x')
+				{
+						Wyniki -> Caption="Wygral X!!! ";
+						return;
+				}
+				if (sq5 == 'o')
+				{
+					Wyniki -> Caption="Wygral O!!! ";
+						return;
+				}
+	 }
+	  if(CheckWinCondition()==2)
+	 {
+		Wyniki -> Caption="REMIS";
+		return;
 	 }
 }
 void __fastcall TForm3::XO7Click(TObject *Sender)
@@ -1145,113 +1388,165 @@ void __fastcall TForm3::XO7Click(TObject *Sender)
 		//CurryPlayerTaste='o';
 		CurryPlayer->Caption =CurryPlayerTaste;
 		XO7->Enabled = False;
-		int valueToBeDelted = 7;
-		auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		listaP髄.erase(it);
-		number = listaP髄.size();
+        if(CheckWinCondition()==1)
+	 {
+				if (sq9 == 'x')
+				{
+						Wyniki -> Caption="Wygral X!!! ";
+						return;
+				}
+				if (sq9 == 'o')
+				{
+					Wyniki -> Caption="Wygral O!!! ";
+						return;
+				}
+	 }
+	  if(CheckWinCondition()==2)
+	 {
+		Wyniki -> Caption="REMIS";
+		return;
+	 }
+	 }
+		int valueToBeDeleted = 7;
+		auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		listaP贸l.erase(it);
+		number = listaP贸l.size();
 		srand(time(NULL));
-		sqX = rand() % number;
-		ruchComp = listaP髄[sqX];
-		if (ruchComp == 1)
+		if (listaP贸l.size() != 0)
 		{
+		  sqX = rand() % number;
+		}
+		else
+		{
+		 sqX = 90;
+		}
+		ruchComp = listaP贸l[sqX];
+		if (ruchComp == 1 && CheckWinCondition()!=2)
+		{
+		 sq1 = 'o';
 		 XO1->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
 		 XO1->Enabled = False;
 		 int valueToBeDeleted = 1;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
 		 {
-			listaP髄.erase(it);
+			listaP贸l.erase(it);
 		 }
 		}
-		 if (ruchComp == 2)
+		 if (ruchComp == 2 && CheckWinCondition()!=2)
 		{
+		 sq2 = 'o';
 		 XO2->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
 		 XO2->Enabled = False;
 		 int valueToBeDeleted = 2;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
 		 {
-			listaP髄.erase(it);
+			listaP贸l.erase(it);
 		 }
 		}
-		 if (ruchComp == 3)
+		 if (ruchComp == 3 && CheckWinCondition()!=2)
 		{
+		 sq3 = 'o';
 		 XO3->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
 		 XO3->Enabled = False;
 		 int valueToBeDeleted = 3;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
 		 {
-			listaP髄.erase(it);
+			listaP贸l.erase(it);
 		 }
 		}
-		 if (ruchComp == 4)
+		 if (ruchComp == 4 && CheckWinCondition()!=2)
 		{
+		 sq4 = 'o';
 		 XO4->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
 		 XO4->Enabled = False;
 		 int valueToBeDeleted = 4;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
 		 {
-			listaP髄.erase(it);
+			listaP贸l.erase(it);
 		 }
 		}
-		 if (ruchComp == 5)
+		 if (ruchComp == 5 && CheckWinCondition()!=2)
 		{
+		 sq5 = 'o';
 		 XO5->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
 		 XO5->Enabled = False;
 		 int valueToBeDeleted = 5;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
 		 {
-			listaP髄.erase(it);
+			listaP贸l.erase(it);
 		 }
 		}
-		 if (ruchComp == 6)
+		 if (ruchComp == 6 && CheckWinCondition()!=2)
 		{
+		 sq6 = 'o';
 		 XO6->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
 		 XO6->Enabled = False;
 		 int valueToBeDeleted = 6;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
 		 {
-			listaP髄.erase(it);
+			listaP贸l.erase(it);
 		 }
 		}
-		 if (ruchComp == 7)
+		 if (ruchComp == 7 && CheckWinCondition()!=2)
 		{
+		 sq7 = 'o';
 		 XO7->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
 		 XO7->Enabled = False;
 		 int valueToBeDeleted = 7;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
 		 {
-			listaP髄.erase(it);
+			listaP贸l.erase(it);
 		 }
 		}
-		 if (ruchComp == 8)
+		 if (ruchComp == 8 && CheckWinCondition()!=2)
 		{
+		 sq8 = 'o';
 		 XO8->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
 		 XO8->Enabled = False;
 		 int valueToBeDeleted = 8;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
 		 {
-			listaP髄.erase(it);
+			listaP贸l.erase(it);
 		 }
 		}
-		 if (ruchComp == 9)
+		 if (ruchComp == 9 && CheckWinCondition()!=2)
 		{
+		 sq9 = 'o';
 		 XO9->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
 		 XO9->Enabled = False;
 		 int valueToBeDeleted = 9;
-		 auto it = find(listaP髄.begin(), listaP髄.end(), valueToBeDeleted);
-		 if (it != listaP髄.end())
+		 auto it = find(listaP贸l.begin(), listaP贸l.end(), valueToBeDeleted);
+		 if (it != listaP贸l.end())
 		 {
-			listaP髄.erase(it);
+			listaP贸l.erase(it);
 		 }
 		}
-}
+        	if(CheckWinCondition()==1)
+	 {
+				if (sq5 == 'x')
+				{
+						Wyniki -> Caption="Wygral X!!! ";
+						return;
+				}
+				if (sq5 == 'o')
+				{
+					Wyniki -> Caption="Wygral O!!! ";
+						return;
+				}
+	 }
+	  if(CheckWinCondition()==2)
+	 {
+		Wyniki -> Caption="REMIS";
+		return;
+	 }
 }
 //---------------------------------------------------------------------------
 int TForm3:: CheckWinCondition()
