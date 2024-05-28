@@ -24,7 +24,7 @@ void __fastcall TFiveByFive::PoleClick(TObject *Sender)
 	TImage* ImageClicked=dynamic_cast<TImage*>(Sender);
 	if(CurryPlayerTaste=='x')
 	 {
-		ImageClicked->Picture->LoadFromFile("C:/Users/dzien/Documents/builder/graphics/x.bmp");
+		ImageClicked->Picture->LoadFromFile("../../graphics/x.bmp");
 		ImageClicked->Tag=1;
 		CurryPlayerTaste='o';
 		CurryPlayer-> Caption = CurryPlayerTaste;
@@ -45,7 +45,7 @@ void __fastcall TFiveByFive::PoleClick(TObject *Sender)
 
 	 else if(CurryPlayerTaste=='o')
 	 {
-		ImageClicked->Picture->LoadFromFile("C:/Users/dzien/Documents/builder/graphics/o.bmp");
+		ImageClicked->Picture->LoadFromFile("../../graphics/o.bmp");
 		ImageClicked->Tag=2;
 		CurryPlayerTaste='x';
 		CurryPlayer-> Caption = CurryPlayerTaste;
@@ -134,31 +134,31 @@ int TFiveByFive:: CheckWinCondition()
 //---------------------------------------------------------------------------
 void TFiveByFive:: Clearing()
 {
-		Image0->Picture->LoadFromFile("C:/Users/dzien/Documents/builder/graphics/nic.bmp");
-		Image1->Picture->LoadFromFile("C:/Users/dzien/Documents/builder/graphics/nic.bmp");
-		Image2->Picture->LoadFromFile("C:/Users/dzien/Documents/builder/graphics/nic.bmp");
-		Image3->Picture->LoadFromFile("C:/Users/dzien/Documents/builder/graphics/nic.bmp");
-		Image4->Picture->LoadFromFile("C:/Users/dzien/Documents/builder/graphics/nic.bmp");
-		Image5->Picture->LoadFromFile("C:/Users/dzien/Documents/builder/graphics/nic.bmp");
-		Image6->Picture->LoadFromFile("C:/Users/dzien/Documents/builder/graphics/nic.bmp");
-		Image7->Picture->LoadFromFile("C:/Users/dzien/Documents/builder/graphics/nic.bmp");
-		Image8->Picture->LoadFromFile("C:/Users/dzien/Documents/builder/graphics/nic.bmp");
-		Image9->Picture->LoadFromFile("C:/Users/dzien/Documents/builder/graphics/nic.bmp");
-		Image10->Picture->LoadFromFile("C:/Users/dzien/Documents/builder/graphics/nic.bmp");
-		Image11->Picture->LoadFromFile("C:/Users/dzien/Documents/builder/graphics/nic.bmp");
-		Image12->Picture->LoadFromFile("C:/Users/dzien/Documents/builder/graphics/nic.bmp");
-		Image13->Picture->LoadFromFile("C:/Users/dzien/Documents/builder/graphics/nic.bmp");
-		Image14->Picture->LoadFromFile("C:/Users/dzien/Documents/builder/graphics/nic.bmp");
-		Image15->Picture->LoadFromFile("C:/Users/dzien/Documents/builder/graphics/nic.bmp");
-		Image16->Picture->LoadFromFile("C:/Users/dzien/Documents/builder/graphics/nic.bmp");
-		Image17->Picture->LoadFromFile("C:/Users/dzien/Documents/builder/graphics/nic.bmp");
-		Image18->Picture->LoadFromFile("C:/Users/dzien/Documents/builder/graphics/nic.bmp");
-		Image19->Picture->LoadFromFile("C:/Users/dzien/Documents/builder/graphics/nic.bmp");
-		Image20->Picture->LoadFromFile("C:/Users/dzien/Documents/builder/graphics/nic.bmp");
-		Image21->Picture->LoadFromFile("C:/Users/dzien/Documents/builder/graphics/nic.bmp");
-		Image22->Picture->LoadFromFile("C:/Users/dzien/Documents/builder/graphics/nic.bmp");
-		Image23->Picture->LoadFromFile("C:/Users/dzien/Documents/builder/graphics/nic.bmp");
-		Image24->Picture->LoadFromFile("C:/Users/dzien/Documents/builder/graphics/nic.bmp");
+		Image0->Picture->LoadFromFile("../../graphics/nic.bmp");
+		Image1->Picture->LoadFromFile("../../graphics/nic.bmp");
+		Image2->Picture->LoadFromFile("../../graphics/nic.bmp");
+		Image3->Picture->LoadFromFile("../../graphics/nic.bmp");
+		Image4->Picture->LoadFromFile("../../graphics/nic.bmp");
+		Image5->Picture->LoadFromFile("../../graphics/nic.bmp");
+		Image6->Picture->LoadFromFile("../../graphics/nic.bmp");
+		Image7->Picture->LoadFromFile("../../graphics/nic.bmp");
+		Image8->Picture->LoadFromFile("../../graphics/nic.bmp");
+		Image9->Picture->LoadFromFile("../../graphics/nic.bmp");
+		Image10->Picture->LoadFromFile("../../graphics/nic.bmp");
+		Image11->Picture->LoadFromFile("../../graphics/nic.bmp");
+		Image12->Picture->LoadFromFile("../../graphics/nic.bmp");
+		Image13->Picture->LoadFromFile("../../graphics/nic.bmp");
+		Image14->Picture->LoadFromFile("../../graphics/nic.bmp");
+		Image15->Picture->LoadFromFile("../../graphics/nic.bmp");
+		Image16->Picture->LoadFromFile("../../graphics/nic.bmp");
+		Image17->Picture->LoadFromFile("../../graphics/nic.bmp");
+		Image18->Picture->LoadFromFile("../../graphics/nic.bmp");
+		Image19->Picture->LoadFromFile("../../graphics/nic.bmp");
+		Image20->Picture->LoadFromFile("../../graphics/nic.bmp");
+		Image21->Picture->LoadFromFile("../../graphics/nic.bmp");
+		Image22->Picture->LoadFromFile("../../graphics/nic.bmp");
+		Image23->Picture->LoadFromFile("../../graphics/nic.bmp");
+		Image24->Picture->LoadFromFile("../../graphics/nic.bmp");
 		CurryPlayerTaste='x';
 		Wyniki -> Caption= "";
 }
@@ -262,5 +262,6 @@ void __fastcall TFiveByFive::MenuExitClick(TObject *Sender)
 		Start->Show();
 	}
 }
+//---------------------------------------------------------------------------
 //---------------------------------------------------------------------------
 

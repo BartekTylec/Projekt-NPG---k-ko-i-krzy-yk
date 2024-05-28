@@ -2,8 +2,8 @@ object FiveByFive: TFiveByFive
   Left = 0
   Top = 0
   Caption = 'FiveByFive'
-  ClientHeight = 744
-  ClientWidth = 973
+  ClientHeight = 712
+  ClientWidth = 938
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -187,11 +187,17 @@ object FiveByFive: TFiveByFive
     OnClick = PoleClick
   end
   object CurryPlayer: TLabel
-    Left = 842
-    Top = 114
-    Width = 34
+    Left = 880
+    Top = 194
+    Width = 36
     Height = 15
     Caption = 'Label1'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Segoe UI'
+    Font.Style = [fsBold]
+    ParentFont = False
   end
   object Wyniki: TLabel
     Left = 840
@@ -200,9 +206,22 @@ object FiveByFive: TFiveByFive
     Height = 15
     Caption = 'Wyniki'
   end
+  object Label1: TLabel
+    Left = 808
+    Top = 194
+    Width = 89
+    Height = 25
+    Caption = 'Tura gracza: '
+    Font.Charset = EASTEUROPE_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Segoe UI Semibold'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
   object MenuExit: TButton
-    Left = -1
-    Top = 344
+    Left = 809
+    Top = 440
     Width = 107
     Height = 25
     Caption = 'Wyj'#347'ce do menu'
