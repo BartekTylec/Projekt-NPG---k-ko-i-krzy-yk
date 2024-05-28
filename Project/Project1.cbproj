@@ -117,35 +117,37 @@
         <BCC_UseClassicCompiler>false</BCC_UseClassicCompiler>
     </PropertyGroup>
     <ItemGroup>
+        <CppCompile Include="EkranStartowy.cpp">
+            <Form>Start</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>EkranStartowy.h</DependentOn>
+            <BuildOrder>5</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="FoByFo.cpp">
+            <Form>FourByFour</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>FoByFo.h</DependentOn>
+            <BuildOrder>6</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="Menu.cpp">
+            <Form>Tylec</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>Menu.h</DependentOn>
+            <BuildOrder>5</BuildOrder>
+        </CppCompile>
         <CppCompile Include="Project1.cpp">
             <BuildOrder>0</BuildOrder>
         </CppCompile>
-        <CppCompile Include="Unit1.cpp">
-            <Form>Form1</Form>
-            <FormType>dfm</FormType>
-            <DependentOn>Unit1.h</DependentOn>
-            <BuildOrder>2</BuildOrder>
-        </CppCompile>
-        <CppCompile Include="Unit2.cpp">
+        <CppCompile Include="ThrByThr.cpp">
             <Form>Form2</Form>
             <FormType>dfm</FormType>
-            <DependentOn>Unit2.h</DependentOn>
+            <DependentOn>ThrByThr.h</DependentOn>
             <BuildOrder>3</BuildOrder>
         </CppCompile>
-        <RcItem Include="..\..\..\..\..\..\Pictures\o.bmp">
-            <ResourceType>BITMAP</ResourceType>
-            <ResourceId>Bitmap_1</ResourceId>
-        </RcItem>
-        <RcItem Include="..\..\..\..\..\..\Pictures\Screenshots\Zrzut ekranu 2023-10-31 124548.png">
-            <ResourceType>RCDATA</ResourceType>
-            <ResourceId>PngImage_1</ResourceId>
-        </RcItem>
-        <RcItem Include="..\..\..\..\..\..\Pictures\x.bmp">
-            <ResourceType>BITMAP</ResourceType>
-            <ResourceId>Bitmap_2</ResourceId>
-        </RcItem>
-        <FormResources Include="Unit1.dfm"/>
-        <FormResources Include="Unit2.dfm"/>
+        <FormResources Include="ThrByThr.dfm"/>
+        <FormResources Include="FoByFo.dfm"/>
+        <FormResources Include="Menu.dfm"/>
+        <FormResources Include="EkranStartowy.dfm"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
@@ -221,24 +223,6 @@
                 </DeployFile>
                 <DeployFile Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'=='true'" LocalName="$(BDS)\bin\cc32c280mt.dll" Class="DependencyModule">
                     <Platform Name="Win32">
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="..\..\..\..\..\..\Pictures\Screenshots\Zrzut ekranu 2023-10-31 124548.png" Configuration="Debug" Class="ProjectFile">
-                    <Platform Name="Win32">
-                        <RemoteDir>.\</RemoteDir>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="..\..\..\..\..\..\Pictures\o.bmp" Configuration="Debug" Class="ProjectFile">
-                    <Platform Name="Win32">
-                        <RemoteDir>.\</RemoteDir>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="..\..\..\..\..\..\Pictures\x.bmp" Configuration="Debug" Class="ProjectFile">
-                    <Platform Name="Win32">
-                        <RemoteDir>.\</RemoteDir>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
