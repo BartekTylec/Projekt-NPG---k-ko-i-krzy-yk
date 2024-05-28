@@ -31,6 +31,7 @@ __published:	// IDE-managed Components
 	TLabel *CurryPlayer;
 	TButton *MenuExit;
 	TLabel *Wyniki;
+	TLabel *Label1;
 	void __fastcall PoleClick(TObject *Sender);
 	void __fastcall MenuExitClick(TObject *Sender);
 private:	// User declarations
