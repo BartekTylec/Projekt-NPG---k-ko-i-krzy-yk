@@ -9,6 +9,7 @@
 #include <Vcl.Forms.hpp>
 #include <Vcl.ExtCtrls.hpp>
 #include <Vcl.Mask.hpp>
+#include <vector>
 //---------------------------------------------------------------------------
 class TForm3 : public TForm
 {
@@ -27,7 +28,6 @@ __published:	// IDE-managed Components
 	TButton *MenuExit;
 	TStaticText *CurryPlayer;
 	TButton *Cofnij;
-	TStaticText *TEKST;
 	void __fastcall XO1Click(TObject *Sender);
 	void __fastcall XO2Click(TObject *Sender);
 	void __fastcall XO3Click(TObject *Sender);
@@ -39,7 +39,6 @@ __published:	// IDE-managed Components
 	void __fastcall XO7Click(TObject *Sender);
 	void __fastcall OnCreate(TObject *Sender);
 	//void __fastcall TuraClick(TObject *Sender);
-	//void __fastcall WynikiClick(TObject *Sender);
 	//void __fastcall CurryPlayerClick(TObject *Sender);
 	//void __fastcall XO10Click(TObject *Sender);
 	//void __fastcall LabelChange(TObject *Sender);
@@ -47,6 +46,13 @@ __published:	// IDE-managed Components
 private:	// User declarations
 	int TForm3:: CheckWinCondition();
 	char sq1, sq2, sq3, sq4, sq5, sq6, sq7, sq8, sq9;
+	std::vector<int> listaPól = {1, 2, 3, 4, 5 ,6, 7, 8, 9};
+    const char CurryPlayerTaste =  'x';
+	char ostatniRuch;
+	int ruchComp;
+	int sqX;
+	int number;
+	int valueToBeDeleted;
 public:		// User declarations
 	__fastcall TForm3(TComponent* Owner);
 };
