@@ -1,7 +1,7 @@
 object Form3: TForm3
   Left = 0
   Top = 0
-  Caption = 'Form3'
+  Caption = '2'
   ClientHeight = 632
   ClientWidth = 677
   Color = clWhite
@@ -91,9 +91,9 @@ object Form3: TForm3
   object Wyniki: TLabel
     Left = 216
     Top = 544
-    Width = 80
+    Width = 73
     Height = 37
-    Caption = 'Wyniki'
+    Caption = 'Wynik'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -27
@@ -130,13 +130,5 @@ object Form3: TForm3
     Height = 41
     Caption = 'Cofnij ruch'
     TabOrder = 2
-  end
-  object TEKST: TStaticText
-    Left = 424
-    Top = 520
-    Width = 35
-    Height = 19
-    Caption = 'TEKST'
-    TabOrder = 3
   end
 end
