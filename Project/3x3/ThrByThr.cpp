@@ -4,7 +4,8 @@
 #pragma hdrstop
 
 #include "ThrByThr.h"
-#include "Unit2.h"
+#include "Menu.h"
+#include "EkranStartowy.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma resource "*.dfm"
@@ -14,7 +15,7 @@ char sq1, sq2, sq3, sq4, sq5, sq6, sq7, sq8, sq9;
 //---------------------------------------------------------------------------
 __fastcall TForm2::TForm2(TComponent* Owner): TForm(Owner)
 {
-	//CurryPlayer->TControl::SetText(CurryPlayerTaste);
+	CurryPlayer-> Caption = CurryPlayerTaste;
 }
 //---------------------------------------------------------------------------
 
@@ -23,8 +24,9 @@ void __fastcall TForm2::XO1Click(TObject *Sender)
 	 if(CurryPlayerTaste=='x')
 	 {
 		sq1=CurryPlayerTaste;
-		XO1->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/x.bmp");
+		XO1->Picture->LoadFromFile("C:/Users/dzien/Documents/builder/graphics/x.bmp");
 		CurryPlayerTaste='o';
+		CurryPlayer-> Caption = CurryPlayerTaste;
 		 XO1->Enabled = False;
 
 
@@ -50,8 +52,9 @@ void __fastcall TForm2::XO1Click(TObject *Sender)
 	 else if(CurryPlayerTaste=='o')
 	 {
 		sq1=CurryPlayerTaste;
-		XO1->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		XO1->Picture->LoadFromFile("C:/Users/dzien/Documents/builder/graphics/o.bmp");
 		CurryPlayerTaste='x';
+		CurryPlayer-> Caption = CurryPlayerTaste;
 		XO1->Enabled = False;
 
 
@@ -81,8 +84,9 @@ void __fastcall TForm2::XO2Click(TObject *Sender)
 	 if(CurryPlayerTaste=='x')
 	 {
 		sq2=CurryPlayerTaste;
-		XO2->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/x.bmp");
+		XO2->Picture->LoadFromFile("C:/Users/dzien/Documents/builder/graphics/x.bmp");
 		CurryPlayerTaste='o';
+		CurryPlayer-> Caption = CurryPlayerTaste;
 		XO2->Enabled = False;
 
 
@@ -108,8 +112,9 @@ void __fastcall TForm2::XO2Click(TObject *Sender)
 	 else if(CurryPlayerTaste=='o')
 	 {
 		sq2=CurryPlayerTaste;
-		XO2->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		XO2->Picture->LoadFromFile("C:/Users/dzien/Documents/builder/graphics/o.bmp");
 		CurryPlayerTaste='x';
+		CurryPlayer-> Caption = CurryPlayerTaste;
 		XO2->Enabled = False;
 
 
@@ -139,8 +144,9 @@ void __fastcall TForm2::XO3Click(TObject *Sender)
 	 if(CurryPlayerTaste=='x')
 	 {
 	   sq3=CurryPlayerTaste;
-		XO3->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/x.bmp");
+		XO3->Picture->LoadFromFile("C:/Users/dzien/Documents/builder/graphics/x.bmp");
 		CurryPlayerTaste='o';
+		CurryPlayer-> Caption = CurryPlayerTaste;
 		XO3->Enabled = False;
 
 
@@ -166,8 +172,9 @@ void __fastcall TForm2::XO3Click(TObject *Sender)
 	 else if(CurryPlayerTaste=='o')
 	 {
 		sq3=CurryPlayerTaste;
-		XO3->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		XO3->Picture->LoadFromFile("C:/Users/dzien/Documents/builder/graphics/o.bmp");
 		CurryPlayerTaste='x';
+		CurryPlayer-> Caption = CurryPlayerTaste;
 		XO3->Enabled = False;
 
 
@@ -197,8 +204,9 @@ void __fastcall TForm2::XO4Click(TObject *Sender)
 	 if(CurryPlayerTaste=='x')
 	 {
 		sq4=CurryPlayerTaste;
-		XO4->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/x.bmp");
+		XO4->Picture->LoadFromFile("C:/Users/dzien/Documents/builder/graphics/x.bmp");
 		CurryPlayerTaste='o';
+		CurryPlayer-> Caption = CurryPlayerTaste;
 		XO4->Enabled = False;
 
 
@@ -225,8 +233,9 @@ void __fastcall TForm2::XO4Click(TObject *Sender)
 	 else if(CurryPlayerTaste=='o')
 	 {
 		sq4=CurryPlayerTaste;
-		XO4->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		XO4->Picture->LoadFromFile("C:/Users/dzien/Documents/builder/graphics/o.bmp");
 		CurryPlayerTaste='x';
+		CurryPlayer-> Caption = CurryPlayerTaste;
 		XO4->Enabled = False;
 
 
@@ -255,8 +264,9 @@ void __fastcall TForm2::XO5Click(TObject *Sender)
 	 if(CurryPlayerTaste=='x')
 	 {
 		sq5=CurryPlayerTaste;
-		XO5->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/x.bmp");
+		XO5->Picture->LoadFromFile("C:/Users/dzien/Documents/builder/graphics/x.bmp");
 		CurryPlayerTaste='o';
+		CurryPlayer-> Caption = CurryPlayerTaste;
 		XO5->Enabled = False;
 
 
@@ -282,8 +292,9 @@ void __fastcall TForm2::XO5Click(TObject *Sender)
 	 else if(CurryPlayerTaste=='o')
 	 {
 		sq5=CurryPlayerTaste;
-		XO5->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		XO5->Picture->LoadFromFile("C:/Users/dzien/Documents/builder/graphics/o.bmp");
 		CurryPlayerTaste='x';
+		CurryPlayer-> Caption = CurryPlayerTaste;
 		XO5->Enabled = False;
 
 
@@ -313,8 +324,9 @@ void __fastcall TForm2::XO6Click(TObject *Sender)
 	 if(CurryPlayerTaste=='x')
 	 {
 		sq6=CurryPlayerTaste;
-		XO6->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/x.bmp");
+		XO6->Picture->LoadFromFile("C:/Users/dzien/Documents/builder/graphics/x.bmp");
 		CurryPlayerTaste='o';
+		CurryPlayer-> Caption = CurryPlayerTaste;
 		XO6->Enabled = False;
 
 
@@ -342,8 +354,9 @@ void __fastcall TForm2::XO6Click(TObject *Sender)
 	 else if(CurryPlayerTaste=='o')
 	 {
 		sq6=CurryPlayerTaste;
-		XO6->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		XO6->Picture->LoadFromFile("C:/Users/dzien/Documents/builder/graphics/o.bmp");
 		CurryPlayerTaste='x';
+		CurryPlayer-> Caption = CurryPlayerTaste;
 		XO6->Enabled = False;
 
 
@@ -374,8 +387,9 @@ void __fastcall TForm2::XO9Click(TObject *Sender)
 	 if(CurryPlayerTaste=='x')
 	 {
 		sq9=CurryPlayerTaste;
-		XO9->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/x.bmp");
+		XO9->Picture->LoadFromFile("C:/Users/dzien/Documents/builder/graphics/x.bmp");
 		CurryPlayerTaste='o';
+		CurryPlayer-> Caption = CurryPlayerTaste;
 		XO9->Enabled = False;
 
 
@@ -402,8 +416,9 @@ void __fastcall TForm2::XO9Click(TObject *Sender)
 	 else if(CurryPlayerTaste=='o')
 	 {
 		sq9=CurryPlayerTaste;
-		XO9->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		XO9->Picture->LoadFromFile("C:/Users/dzien/Documents/builder/graphics/o.bmp");
 		CurryPlayerTaste='x';
+		CurryPlayer-> Caption = CurryPlayerTaste;
 		XO9->Enabled = False;
 
 
@@ -433,8 +448,9 @@ void __fastcall TForm2::XO8Click(TObject *Sender)
 	 if(CurryPlayerTaste=='x')
 	 {
 		sq8=CurryPlayerTaste;
-		XO8->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/x.bmp");
+		XO8->Picture->LoadFromFile("C:/Users/dzien/Documents/builder/graphics/x.bmp");
 		CurryPlayerTaste='o';
+		CurryPlayer-> Caption = CurryPlayerTaste;
 		XO8->Enabled = False;
 
 
@@ -460,8 +476,9 @@ void __fastcall TForm2::XO8Click(TObject *Sender)
 	 else if(CurryPlayerTaste=='o')
 	 {
 		sq8=CurryPlayerTaste;
-		XO8->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		XO8->Picture->LoadFromFile("C:/Users/dzien/Documents/builder/graphics/o.bmp");
 		CurryPlayerTaste='x';
+		CurryPlayer-> Caption = CurryPlayerTaste;
 		XO8->Enabled = False;
 
 
@@ -491,8 +508,9 @@ void __fastcall TForm2::XO7Click(TObject *Sender)
 	 if(CurryPlayerTaste=='x')
 	 {
 		sq7=CurryPlayerTaste;
-		XO7->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/x.bmp");
+		XO7->Picture->LoadFromFile("C:/Users/dzien/Documents/builder/graphics/x.bmp");
 		CurryPlayerTaste='o';
+		CurryPlayer-> Caption = CurryPlayerTaste;
 		XO7->Enabled = False;
 
 
@@ -518,8 +536,9 @@ void __fastcall TForm2::XO7Click(TObject *Sender)
 	 else if(CurryPlayerTaste=='o')
 	 {
 		sq7=CurryPlayerTaste;
-		XO7->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/o.bmp");
+		XO7->Picture->LoadFromFile("C:/Users/dzien/Documents/builder/graphics/o.bmp");
 		CurryPlayerTaste='x';
+		CurryPlayer-> Caption = CurryPlayerTaste;
 		XO7->Enabled = False;
 
 
@@ -549,7 +568,7 @@ int TForm2:: CheckWinCondition()
 {
 	if(sq1==sq2 && sq2==sq3 && sq1 != NULL  )
 	{
-    	XO1->Enabled = False;
+		XO1->Enabled = False;
 		XO2->Enabled = False;
 		XO3->Enabled = False;
 		XO4->Enabled = False;
@@ -657,7 +676,7 @@ int TForm2:: CheckWinCondition()
 
 	else if(sq1!=NULL && sq2!=NULL && sq3!=NULL && sq4!=NULL  && sq5!=NULL && sq6!=NULL && sq7!=NULL && sq8!=NULL && sq9!= NULL)
 	{
-			XO1->Enabled = False;
+		XO1->Enabled = False;
 		XO2->Enabled = False;
 		XO3->Enabled = False;
 		XO4->Enabled = False;
@@ -676,22 +695,59 @@ int TForm2:: CheckWinCondition()
 }
 
 //---------------------------------------------------------------------------
-
+void TForm2:: Clearing()
+{
+		XO1->Picture->LoadFromFile("C:/Users/dzien/Documents/builder/graphics/nic.bmp");
+		XO2->Picture->LoadFromFile("C:/Users/dzien/Documents/builder/graphics/nic.bmp");
+		XO3->Picture->LoadFromFile("C:/Users/dzien/Documents/builder/graphics/nic.bmp");
+		XO4->Picture->LoadFromFile("C:/Users/dzien/Documents/builder/graphics/nic.bmp");
+		XO5->Picture->LoadFromFile("C:/Users/dzien/Documents/builder/graphics/nic.bmp");
+		XO6->Picture->LoadFromFile("C:/Users/dzien/Documents/builder/graphics/nic.bmp");
+		XO7->Picture->LoadFromFile("C:/Users/dzien/Documents/builder/graphics/nic.bmp");
+		XO8->Picture->LoadFromFile("C:/Users/dzien/Documents/builder/graphics/nic.bmp");
+		XO9->Picture->LoadFromFile("C:/Users/dzien/Documents/builder/graphics/nic.bmp");
+		CurryPlayerTaste='x';
+		Wyniki -> Caption="";
+		XO1->Enabled = True;
+		XO2->Enabled = True;
+		XO3->Enabled = True;
+		XO4->Enabled = True;
+		XO5->Enabled = True;
+		XO6->Enabled = True;
+		XO7->Enabled = True;
+		XO8->Enabled = True;
+		XO9->Enabled = True;
+		sq1 = NULL;
+		sq2 = NULL;
+		sq3 = NULL;
+		sq4 = NULL;
+		sq5 = NULL;
+		sq6 = NULL;
+		sq7 = NULL;
+		sq8 = NULL;
+		sq9 = NULL;
+}
 
 //---------------------------------------------------------------------------
 
 void __fastcall TForm2::OnCreate(TObject *Sender)
 {
-		XO1->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/nic.bmp");
-		XO2->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/nic.bmp");
-		XO3->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/nic.bmp");
-		XO4->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/nic.bmp");
-		XO5->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/nic.bmp");
-		XO6->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/nic.bmp");
-		XO7->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/nic.bmp");
-		XO8->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/nic.bmp");
-		XO9->Picture->LoadFromFile("C:/Users/iwotr/Desktop/NPG/Graphics/nic.bmp");
+		Clearing();
 }
 //---------------------------------------------------------------------------
 
+
+
+//---------------------------------------------------------------------------
+
+void __fastcall TForm2::MenuExitClick(TObject *Sender)
+{
+	if(CheckWinCondition()==2 || CheckWinCondition()==1)
+	{
+		Form2->Close();
+		Clearing();
+		Start->Show();
+	}
+}
+//---------------------------------------------------------------------------
 

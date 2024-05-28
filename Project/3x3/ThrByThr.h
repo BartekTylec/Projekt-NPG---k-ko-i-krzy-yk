@@ -36,11 +36,13 @@ __published:	// IDE-managed Components
 	void __fastcall XO8Click(TObject *Sender);
 	void __fastcall XO7Click(TObject *Sender);
 	void __fastcall OnCreate(TObject *Sender);
+	void __fastcall MenuExitClick(TObject *Sender);
 	//void __fastcall XO10Click(TObject *Sender);
 	//void __fastcall LabelChange(TObject *Sender);
 	//void __fastcall WynikiClick(TObject *Sender);
 private:	// User declarations
-    int TForm2:: CheckWinCondition();
+	int TForm2:: CheckWinCondition();
+	void TForm2:: Clearing();
 public:		// User declarations
 	__fastcall TForm2(TComponent* Owner);
 };

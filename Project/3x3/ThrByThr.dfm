@@ -102,5 +102,6 @@ object Form2: TForm2
     Height = 25
     Caption = 'Wyj'#347'ce do menu'
     TabOrder = 0
+    OnClick = MenuExitClick
   end
 end
