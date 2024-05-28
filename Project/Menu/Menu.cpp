@@ -6,6 +6,7 @@
 #include "Menu.h"
 #include "ThrByThr.h"
 #include "FoByFo.h"
+#include "FivByFive.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma resource "*.dfm"
@@ -26,7 +27,7 @@ void __fastcall TTylec::Button2Click(TObject *Sender)
 void __fastcall TTylec::Button1Click(TObject *Sender)
 {
 
-		   Tylec->Hide();
+		   Tylec->Close();
 		   Form2->ShowModal();
 }
 //---------------------------------------------------------------------------
@@ -47,8 +48,8 @@ void __fastcall TTylec::Button4Click(TObject *Sender)
 
 void __fastcall TTylec::Button3Click(TObject *Sender)
 {
-
 		   Tylec->Close();
+		   FiveByFive->ShowModal();
 }
 //---------------------------------------------------------------------------
 
