@@ -2,8 +2,8 @@ object Tylec: TTylec
   Left = 0
   Top = 0
   Caption = 'Menu'
-  ClientHeight = 433
-  ClientWidth = 622
+  ClientHeight = 412
+  ClientWidth = 592
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -37,23 +37,23 @@ object Tylec: TTylec
     Font.Style = []
     ParentFont = False
   end
-  object Button1: TButton
+  object Button2: TButton
     Left = 256
     Top = 152
     Width = 97
     Height = 25
-    Caption = '3x3'
+    Caption = '4x4'
     TabOrder = 0
-    OnClick = Button1Click
+    OnClick = Button2Click
   end
-  object Button2: TButton
+  object Button1: TButton
     Left = 136
     Top = 152
     Width = 97
     Height = 25
-    Caption = '4x4'
+    Caption = '3x3'
     TabOrder = 1
-    OnClick = Button2Click
+    OnClick = Button1Click
   end
   object Button3: TButton
     Left = 376
@@ -65,8 +65,8 @@ object Tylec: TTylec
     OnClick = Button3Click
   end
   object Button4: TButton
-    Left = 184
-    Top = 344
+    Left = 168
+    Top = 320
     Width = 105
     Height = 25
     Caption = 'Dw'#243'ch graczy'
@@ -74,12 +74,30 @@ object Tylec: TTylec
     OnClick = Button4Click
   end
   object Button5: TButton
-    Left = 343
-    Top = 344
+    Left = 327
+    Top = 320
     Width = 105
     Height = 25
     Caption = 'Z automatem'
     TabOrder = 4
     OnClick = Button5Click
+  end
+  object Button6: TButton
+    Left = 216
+    Top = 368
+    Width = 169
+    Height = 25
+    Caption = 'Rozpocznij gr'#281
+    TabOrder = 5
+    OnClick = Button6Click
+  end
+  object Button7: TButton
+    Left = 464
+    Top = 24
+    Width = 107
+    Height = 25
+    Caption = 'Resetuj ustawienia'
+    TabOrder = 6
+    OnClick = Button7Click
   end
 end
