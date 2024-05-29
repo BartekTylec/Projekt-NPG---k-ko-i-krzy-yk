@@ -30,7 +30,9 @@ void __fastcall TStart::Button2Click(TObject *Sender)
 
 void __fastcall TStart::StartCreate(TObject *Sender)
 {
-                    Image1->Picture->LoadFromFile("../../graphics/XiO.bmp");
+		Image1->Picture->LoadFromFile("../../graphics/tlo.bmp");
 }
+//---------------------------------------------------------------------------
+
 //---------------------------------------------------------------------------
 

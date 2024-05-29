@@ -2,8 +2,8 @@ object Start: TStart
   Left = 0
   Top = 0
   Caption = 'Witamy!!!'
-  ClientHeight = 437
-  ClientWidth = 631
+  ClientHeight = 443
+  ClientWidth = 444
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -12,9 +12,15 @@ object Start: TStart
   Font.Style = []
   OnCreate = StartCreate
   TextHeight = 15
+  object Image1: TImage
+    Left = -8
+    Top = 0
+    Width = 577
+    Height = 545
+  end
   object Label1: TLabel
-    Left = 248
-    Top = 120
+    Left = 294
+    Top = 32
     Width = 115
     Height = 37
     Caption = 'Witamy!!!'
@@ -25,15 +31,9 @@ object Start: TStart
     Font.Style = []
     ParentFont = False
   end
-  object Image1: TImage
-    Left = 0
-    Top = 0
-    Width = 633
-    Height = 441
-  end
   object Button1: TButton
-    Left = 136
-    Top = 192
+    Left = 40
+    Top = 288
     Width = 137
     Height = 81
     Caption = 'Graj'
@@ -41,8 +41,8 @@ object Start: TStart
     OnClick = Button1Click
   end
   object Button2: TButton
-    Left = 368
-    Top = 192
+    Left = 272
+    Top = 288
     Width = 137
     Height = 81
     Caption = 'Zamknij aplikacj'#281
