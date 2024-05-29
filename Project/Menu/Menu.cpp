@@ -8,7 +8,9 @@
 #include "ThrByThr.h"
 #include "FoByFo.h"
 #include "FivByFive.h"
- #include "ThrByThrCompX.h"
+#include "ThrByThrCompX.h"
+#include "SMenu.h"
+
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma resource "*.dfm"
@@ -73,7 +75,7 @@ void __fastcall TTylec::Button3Click(TObject *Sender)
 void __fastcall TTylec::Button6Click(TObject *Sender)
 {
 	if (x == 11) {
-		 Form2->ShowModal();
+		 SkinMenu->ShowModal();
 		 Tylec->Close();
 	}
 	if (x == 12) {
@@ -89,10 +91,10 @@ void __fastcall TTylec::Button6Click(TObject *Sender)
 		Tylec->Close();
 	}
 	if (x == 22) {
-		 ShowMessage("Work in progress, opcja niedostêpna");
+		 ShowMessage("Work in progress, opcja niedostêpna :(");
 	}
 	if (x == 23) {
-		ShowMessage("Work in progress, opcja niedostepna:(");
+		ShowMessage("Work in progress, opcja niedostepna :(");
 	}
 }
 
