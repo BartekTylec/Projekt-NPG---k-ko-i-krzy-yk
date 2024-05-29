@@ -206,7 +206,11 @@ void TFourByFour:: TagRes()
 		Image15->Tag = 0;
 }
 //---------------------------------------------------------------------------
-
+void __fastcall TFourByFour::OnClose(TObject *Sender)
+{
+		FourByFour->Close();
+		Start->Close();
+}
 //---------------------------------------------------------------------------
 
 void __fastcall TFourByFour::MenuExitClick(TObject *Sender)

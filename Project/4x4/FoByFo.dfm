@@ -2,8 +2,8 @@ object FourByFour: TFourByFour
   Left = 0
   Top = 0
   Caption = 'FourByFour'
-  ClientHeight = 712
-  ClientWidth = 938
+  ClientHeight = 703
+  ClientWidth = 932
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -126,8 +126,8 @@ object FourByFour: TFourByFour
   object CurryPlayer: TLabel
     Left = 824
     Top = 202
-    Width = 48
-    Height = 23
+    Width = 36
+    Height = 15
     Caption = 'Label1'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
@@ -139,15 +139,15 @@ object FourByFour: TFourByFour
   object Wyniki: TLabel
     Left = 752
     Top = 328
-    Width = 120
-    Height = 41
+    Width = 36
+    Height = 15
     Caption = 'Wyniki'
   end
   object Label1: TLabel
     Left = 752
     Top = 202
-    Width = 78
-    Height = 23
+    Width = 67
+    Height = 15
     Caption = 'Tura gracza: '
     Font.Charset = EASTEUROPE_CHARSET
     Font.Color = clWindowText
