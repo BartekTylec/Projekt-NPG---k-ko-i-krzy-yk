@@ -106,7 +106,11 @@
         <AppDPIAwarenessMode>PerMonitorV2</AppDPIAwarenessMode>
         <BCC_UseClassicCompiler>false</BCC_UseClassicCompiler>
         <ILINK_LibraryPath>$(BDSLIB)\$(PLATFORM)$(CC_SUFFIX)\debug;$(ILINK_LibraryPath)</ILINK_LibraryPath>
-        <LinkPackageImports>rtl.bpi;vcl.bpi;vclimg.bpi</LinkPackageImports>
+        <DynamicRTL>false</DynamicRTL>
+        <UsePackages>false</UsePackages>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <LinkPackageStatics>rtl.lib;vcl.lib;vclimg.lib</LinkPackageStatics>
+        <VerInfo_Locale>1033</VerInfo_Locale>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2)'!=''">
         <Defines>NDEBUG;$(Defines)</Defines>
@@ -121,6 +125,12 @@
             <Form>Start</Form>
             <FormType>dfm</FormType>
             <DependentOn>EkranStartowy.h</DependentOn>
+            <BuildOrder>5</BuildOrder>
+        </CppCompile>
+        <CppCompile Include="FivByFive.cpp">
+            <Form>FiveByFive</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>FivByFive.h</DependentOn>
             <BuildOrder>5</BuildOrder>
         </CppCompile>
         <CppCompile Include="FoByFo.cpp">
@@ -144,10 +154,18 @@
             <DependentOn>ThrByThr.h</DependentOn>
             <BuildOrder>3</BuildOrder>
         </CppCompile>
+        <CppCompile Include="ThrByThrCompX.cpp">
+            <Form>Form3</Form>
+            <FormType>dfm</FormType>
+            <DependentOn>ThrByThrCompX.h</DependentOn>
+            <BuildOrder>6</BuildOrder>
+        </CppCompile>
         <FormResources Include="ThrByThr.dfm"/>
-        <FormResources Include="FoByFo.dfm"/>
+        <FormResources Include="ThrByThrCompX.dfm"/>
         <FormResources Include="Menu.dfm"/>
         <FormResources Include="EkranStartowy.dfm"/>
+        <FormResources Include="FivByFive.dfm"/>
+        <FormResources Include="FoByFo.dfm"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
@@ -174,6 +192,10 @@
                 <Source>
                     <Source Name="MainSource">Project1.cpp</Source>
                 </Source>
+                <Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\bcboffice2k280.bpl">Embarcadero C++Builder Office 2000 Servers Package</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\bcbofficexp280.bpl">Embarcadero C++Builder Office XP Servers Package</Excluded_Packages>
+                </Excluded_Packages>
             </CPlusPlusBuilder.Personality>
             <Deployment Version="4">
                 <DeployFile Condition="'$(DynamicRTL)'=='true'" LocalName="$(BDS)\Redist\osx32\libcgcrtl.dylib" Class="DependencyModule">
