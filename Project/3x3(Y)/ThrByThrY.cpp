@@ -4,28 +4,28 @@
 #include <vcl.h>
 #pragma hdrstop
 
-#include "ThrByThr.h"
+#include "ThrByThrY.h"
 #include "Menu.h"
 #include "EkranStartowy.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma resource "*.dfm"
-TForm2 *Form2;
-char CurryPlayerTaste =  'x';
+TForm4 *Form4;
+char CurryPlayerTaste =  'y';
 char sq1, sq2, sq3, sq4, sq5, sq6, sq7, sq8, sq9;
 //---------------------------------------------------------------------------
-__fastcall TForm2::TForm2(TComponent* Owner): TForm(Owner)
+__fastcall TForm4::TForm4(TComponent* Owner): TForm(Owner)
 {
 	CurryPlayer-> Caption = CurryPlayerTaste;
 }
 //---------------------------------------------------------------------------
 
-void __fastcall TForm2::XO1Click(TObject *Sender)
+void __fastcall TForm4::XO1Click(TObject *Sender)
 {
-	 if(CurryPlayerTaste=='x')
+	 if(CurryPlayerTaste=='y')
 	 {
 		sq1=CurryPlayerTaste;
-		XO1->Picture->LoadFromFile("../../graphics/x.bmp");
+		XO1->Picture->LoadFromFile("../../graphics/y.bmp");
 		CurryPlayerTaste='o';
 		CurryPlayer-> Caption = CurryPlayerTaste;
 		 XO1->Enabled = False;
@@ -33,9 +33,9 @@ void __fastcall TForm2::XO1Click(TObject *Sender)
 
 			 if(CheckWinCondition()==1)
 	 {
-				if (sq1 == 'x')
+				if (sq1 == 'y')
 				{
-						Wyniki -> Caption="Wygral X ";
+						Wyniki -> Caption="Wygral Y ";
 						return;
 				}
 				else
@@ -54,16 +54,16 @@ void __fastcall TForm2::XO1Click(TObject *Sender)
 	 {
 		sq1=CurryPlayerTaste;
 		XO1->Picture->LoadFromFile("../../graphics/o.bmp");
-		CurryPlayerTaste='x';
+		CurryPlayerTaste='y';
 		CurryPlayer-> Caption = CurryPlayerTaste;
 		XO1->Enabled = False;
 
 
 		if(CheckWinCondition()==1)
 	 {
-						if (sq1 == 'x')
+						if (sq1 == 'y')
 				{
-						Wyniki -> Caption="Wygral X ";
+						Wyniki -> Caption="Wygral Y ";
 						return;
 				}
 				else
@@ -80,12 +80,12 @@ void __fastcall TForm2::XO1Click(TObject *Sender)
 	 }
 
 }
-void __fastcall TForm2::XO2Click(TObject *Sender)
+void __fastcall TForm4::XO2Click(TObject *Sender)
 {
-	 if(CurryPlayerTaste=='x')
+	 if(CurryPlayerTaste=='y')
 	 {
 		sq2=CurryPlayerTaste;
-		XO2->Picture->LoadFromFile("../../graphics/x.bmp");
+		XO2->Picture->LoadFromFile("../../graphics/y.bmp");
 		CurryPlayerTaste='o';
 		CurryPlayer-> Caption = CurryPlayerTaste;
 		XO2->Enabled = False;
@@ -93,9 +93,9 @@ void __fastcall TForm2::XO2Click(TObject *Sender)
 
 		 if(CheckWinCondition()==1)
 	 {
-						if (sq2 == 'x')
+						if (sq2 == 'y')
 				{
-						Wyniki -> Caption="Wygral X ";
+						Wyniki -> Caption="Wygral Y ";
 						return;
 				}
 				else
@@ -114,16 +114,16 @@ void __fastcall TForm2::XO2Click(TObject *Sender)
 	 {
 		sq2=CurryPlayerTaste;
 		XO2->Picture->LoadFromFile("../../graphics/o.bmp");
-		CurryPlayerTaste='x';
+		CurryPlayerTaste='y';
 		CurryPlayer-> Caption = CurryPlayerTaste;
 		XO2->Enabled = False;
 
 
 		 if(CheckWinCondition()==1)
 	 {
-						if (sq2 == 'x')
+						if (sq2 == 'y')
 				{
-						Wyniki -> Caption="Wygral X ";
+						Wyniki -> Caption="Wygral Y ";
 						return;
 				}
 				else
@@ -140,12 +140,12 @@ void __fastcall TForm2::XO2Click(TObject *Sender)
 	 }
 
 }
-void __fastcall TForm2::XO3Click(TObject *Sender)
+void __fastcall TForm4::XO3Click(TObject *Sender)
 {
-	 if(CurryPlayerTaste=='x')
+	 if(CurryPlayerTaste=='y')
 	 {
 	   sq3=CurryPlayerTaste;
-		XO3->Picture->LoadFromFile("../../graphics/x.bmp");
+		XO3->Picture->LoadFromFile("../../graphics/y.bmp");
 		CurryPlayerTaste='o';
 		CurryPlayer-> Caption = CurryPlayerTaste;
 		XO3->Enabled = False;
@@ -153,9 +153,9 @@ void __fastcall TForm2::XO3Click(TObject *Sender)
 
 		 if(CheckWinCondition()==1)
 	 {
-						if (sq3 == 'x')
+						if (sq3 == 'y')
 				{
-						Wyniki -> Caption="Wygral X ";
+						Wyniki -> Caption="Wygral Y ";
 						return;
 				}
 				else
@@ -174,16 +174,16 @@ void __fastcall TForm2::XO3Click(TObject *Sender)
 	 {
 		sq3=CurryPlayerTaste;
 		XO3->Picture->LoadFromFile("../../graphics/o.bmp");
-		CurryPlayerTaste='x';
+		CurryPlayerTaste='y';
 		CurryPlayer-> Caption = CurryPlayerTaste;
 		XO3->Enabled = False;
 
 
 		 if(CheckWinCondition()==1)
 	 {
-						if (sq3 == 'x')
+						if (sq3 == 'y')
 				{
-						Wyniki -> Caption="Wygral X ";
+						Wyniki -> Caption="Wygral Y ";
 						return;
 				}
 				else
@@ -200,12 +200,12 @@ void __fastcall TForm2::XO3Click(TObject *Sender)
 	 }
 
 }
-void __fastcall TForm2::XO4Click(TObject *Sender)
+void __fastcall TForm4::XO4Click(TObject *Sender)
 {
-	 if(CurryPlayerTaste=='x')
+	 if(CurryPlayerTaste=='y')
 	 {
 		sq4=CurryPlayerTaste;
-		XO4->Picture->LoadFromFile("../../graphics/x.bmp");
+		XO4->Picture->LoadFromFile("../../graphics/y.bmp");
 		CurryPlayerTaste='o';
 		CurryPlayer-> Caption = CurryPlayerTaste;
 		XO4->Enabled = False;
@@ -214,9 +214,9 @@ void __fastcall TForm2::XO4Click(TObject *Sender)
 
 		 if(CheckWinCondition()==1)
 	 {
-						if (sq4 == 'x')
+						if (sq4 == 'y')
 				{
-						Wyniki -> Caption="Wygral X ";
+						Wyniki -> Caption="Wygral Y ";
 						return;
 				}
 				else
@@ -235,16 +235,16 @@ void __fastcall TForm2::XO4Click(TObject *Sender)
 	 {
 		sq4=CurryPlayerTaste;
 		XO4->Picture->LoadFromFile("../../graphics/o.bmp");
-		CurryPlayerTaste='x';
+		CurryPlayerTaste='y';
 		CurryPlayer-> Caption = CurryPlayerTaste;
 		XO4->Enabled = False;
 
 
          if(CheckWinCondition()==1)
 	 {
-						if (sq4 == 'x')
+						if (sq4 == 'y')
 				{
-						Wyniki -> Caption="Wygral X ";
+						Wyniki -> Caption="Wygral Y ";
 						return;
 				}
 				else
@@ -260,12 +260,12 @@ void __fastcall TForm2::XO4Click(TObject *Sender)
 	 }
 	 }
 }
-void __fastcall TForm2::XO5Click(TObject *Sender)
+void __fastcall TForm4::XO5Click(TObject *Sender)
 {
-	 if(CurryPlayerTaste=='x')
+	 if(CurryPlayerTaste=='y')
 	 {
 		sq5=CurryPlayerTaste;
-		XO5->Picture->LoadFromFile("../../graphics/x.bmp");
+		XO5->Picture->LoadFromFile("../../graphics/y.bmp");
 		CurryPlayerTaste='o';
 		CurryPlayer-> Caption = CurryPlayerTaste;
 		XO5->Enabled = False;
@@ -273,9 +273,9 @@ void __fastcall TForm2::XO5Click(TObject *Sender)
 
 		 if(CheckWinCondition()==1)
 	 {
-					if (sq5 == 'x')
+					if (sq5 == 'y')
 				{
-						Wyniki -> Caption="Wygral X ";
+						Wyniki -> Caption="Wygral Y ";
 						return;
 				}
 				else
@@ -294,16 +294,16 @@ void __fastcall TForm2::XO5Click(TObject *Sender)
 	 {
 		sq5=CurryPlayerTaste;
 		XO5->Picture->LoadFromFile("../../graphics/o.bmp");
-		CurryPlayerTaste='x';
+		CurryPlayerTaste='y';
 		CurryPlayer-> Caption = CurryPlayerTaste;
 		XO5->Enabled = False;
 
 
 		 if(CheckWinCondition()==1)
 	 {
-						if (sq5 == 'x')
+						if (sq5 == 'y')
 				{
-						Wyniki -> Caption="Wygral X ";
+						Wyniki -> Caption="Wygral Y ";
 						return;
 				}
 				else
@@ -320,12 +320,12 @@ void __fastcall TForm2::XO5Click(TObject *Sender)
 	 }
 
 }
-void __fastcall TForm2::XO6Click(TObject *Sender)
+void __fastcall TForm4::XO6Click(TObject *Sender)
 {
-	 if(CurryPlayerTaste=='x')
+	 if(CurryPlayerTaste=='y')
 	 {
 		sq6=CurryPlayerTaste;
-		XO6->Picture->LoadFromFile("../../graphics/x.bmp");
+		XO6->Picture->LoadFromFile("../../graphics/y.bmp");
 		CurryPlayerTaste='o';
 		CurryPlayer-> Caption = CurryPlayerTaste;
 		XO6->Enabled = False;
@@ -334,9 +334,9 @@ void __fastcall TForm2::XO6Click(TObject *Sender)
 
 		 if(CheckWinCondition()==1)
 	 {
-						if (sq6 == 'x')
+						if (sq6 == 'y')
 				{
-						Wyniki -> Caption="Wygral X ";
+						Wyniki -> Caption="Wygral Y ";
 						return;
 				}
 				else
@@ -356,7 +356,7 @@ void __fastcall TForm2::XO6Click(TObject *Sender)
 	 {
 		sq6=CurryPlayerTaste;
 		XO6->Picture->LoadFromFile("../../graphics/o.bmp");
-		CurryPlayerTaste='x';
+		CurryPlayerTaste='y';
 		CurryPlayer-> Caption = CurryPlayerTaste;
 		XO6->Enabled = False;
 
@@ -364,9 +364,9 @@ void __fastcall TForm2::XO6Click(TObject *Sender)
 
 		 if(CheckWinCondition()==1)
 	 {
-						if (sq6 == 'x')
+						if (sq6 == 'y')
 				{
-						Wyniki -> Caption="Wygral X ";
+						Wyniki -> Caption="Wygral Y ";
 						return;
 				}
 				else
@@ -383,12 +383,12 @@ void __fastcall TForm2::XO6Click(TObject *Sender)
 	 }
 
 }
-void __fastcall TForm2::XO9Click(TObject *Sender)
+void __fastcall TForm4::XO9Click(TObject *Sender)
 {
-	 if(CurryPlayerTaste=='x')
+	 if(CurryPlayerTaste=='y')
 	 {
 		sq9=CurryPlayerTaste;
-		XO9->Picture->LoadFromFile("../../graphics/x.bmp");
+		XO9->Picture->LoadFromFile("../../graphics/y.bmp");
 		CurryPlayerTaste='o';
 		CurryPlayer-> Caption = CurryPlayerTaste;
 		XO9->Enabled = False;
@@ -397,9 +397,9 @@ void __fastcall TForm2::XO9Click(TObject *Sender)
 
 		 if(CheckWinCondition()==1)
 	 {
-						if (sq9 == 'x')
+						if (sq9 == 'y')
 				{
-						Wyniki -> Caption="Wygral X ";
+						Wyniki -> Caption="Wygral Y ";
 						return;
 				}
 				else
@@ -418,7 +418,7 @@ void __fastcall TForm2::XO9Click(TObject *Sender)
 	 {
 		sq9=CurryPlayerTaste;
 		XO9->Picture->LoadFromFile("../../graphics/o.bmp");
-		CurryPlayerTaste='x';
+		CurryPlayerTaste='y';
 		CurryPlayer-> Caption = CurryPlayerTaste;
 		XO9->Enabled = False;
 
@@ -426,9 +426,9 @@ void __fastcall TForm2::XO9Click(TObject *Sender)
 
 		 if(CheckWinCondition()==1)
 	 {
-						if (sq9 == 'x')
+						if (sq9 == 'y')
 				{
-						Wyniki -> Caption="Wygral X ";
+						Wyniki -> Caption="Wygral Y ";
 						return;
 				}
 				else
@@ -444,12 +444,12 @@ void __fastcall TForm2::XO9Click(TObject *Sender)
 	 }
 	 }
 }
-void __fastcall TForm2::XO8Click(TObject *Sender)
+void __fastcall TForm4::XO8Click(TObject *Sender)
 {
-	 if(CurryPlayerTaste=='x')
+	 if(CurryPlayerTaste=='y')
 	 {
 		sq8=CurryPlayerTaste;
-		XO8->Picture->LoadFromFile("../../graphics/x.bmp");
+		XO8->Picture->LoadFromFile("../../graphics/y.bmp");
 		CurryPlayerTaste='o';
 		CurryPlayer-> Caption = CurryPlayerTaste;
 		XO8->Enabled = False;
@@ -457,9 +457,9 @@ void __fastcall TForm2::XO8Click(TObject *Sender)
 
 		 if(CheckWinCondition()==1)
 	 {
-						if (sq8 == 'x')
+						if (sq8 == 'y')
 				{
-						Wyniki -> Caption="Wygral X ";
+						Wyniki -> Caption="Wygral Y ";
 						return;
 				}
 				else
@@ -478,7 +478,7 @@ void __fastcall TForm2::XO8Click(TObject *Sender)
 	 {
 		sq8=CurryPlayerTaste;
 		XO8->Picture->LoadFromFile("../../graphics/o.bmp");
-		CurryPlayerTaste='x';
+		CurryPlayerTaste='y';
 		CurryPlayer-> Caption = CurryPlayerTaste;
 		XO8->Enabled = False;
 
@@ -486,9 +486,9 @@ void __fastcall TForm2::XO8Click(TObject *Sender)
 
 		 if(CheckWinCondition()==1)
 	 {
-						if (sq8 == 'x')
+						if (sq8 == 'y')
 				{
-						Wyniki -> Caption="Wygral X ";
+						Wyniki -> Caption="Wygral Y ";
 						return;
 				}
 				else
@@ -504,12 +504,12 @@ void __fastcall TForm2::XO8Click(TObject *Sender)
 	 }
 	 }
 }
-void __fastcall TForm2::XO7Click(TObject *Sender)
+void __fastcall TForm4::XO7Click(TObject *Sender)
 {
-	 if(CurryPlayerTaste=='x')
+	 if(CurryPlayerTaste=='y')
 	 {
 		sq7=CurryPlayerTaste;
-		XO7->Picture->LoadFromFile("../../graphics/x.bmp");
+		XO7->Picture->LoadFromFile("../../graphics/y.bmp");
 		CurryPlayerTaste='o';
 		CurryPlayer-> Caption = CurryPlayerTaste;
 		XO7->Enabled = False;
@@ -517,9 +517,9 @@ void __fastcall TForm2::XO7Click(TObject *Sender)
 
 	 if(CheckWinCondition()==1)
 	 {
-				if (sq7 == 'x')
+				if (sq7 == 'y')
 				{
-						Wyniki -> Caption="Wygral X ";
+						Wyniki -> Caption="Wygral Y ";
 						return;
 				}
 				else
@@ -538,16 +538,16 @@ void __fastcall TForm2::XO7Click(TObject *Sender)
 	 {
 		sq7=CurryPlayerTaste;
 		XO7->Picture->LoadFromFile("../../graphics/o.bmp");
-		CurryPlayerTaste='x';
+		CurryPlayerTaste='y';
 		CurryPlayer-> Caption = CurryPlayerTaste;
 		XO7->Enabled = False;
 
 
 		 if(CheckWinCondition()==1)
 	 {
-						if (sq7 == 'x')
+						if (sq7 == 'y')
 				{
-						Wyniki -> Caption="Wygral X ";
+						Wyniki -> Caption="Wygral Y ";
 						return;
 				}
 				else
@@ -565,7 +565,7 @@ void __fastcall TForm2::XO7Click(TObject *Sender)
 
 }
 //---------------------------------------------------------------------------
-int TForm2:: CheckWinCondition()
+int TForm4:: CheckWinCondition()
 {
 	if(sq1==sq2 && sq2==sq3 && sq1 != NULL  )
 	{
@@ -696,7 +696,7 @@ int TForm2:: CheckWinCondition()
 }
 
 //---------------------------------------------------------------------------
-void TForm2:: Clearing()
+void TForm4:: Clearing()
 {
 		XO1->Picture->LoadFromFile("../../graphics/nic.bmp");
 		XO2->Picture->LoadFromFile("../../graphics/nic.bmp");
@@ -707,7 +707,7 @@ void TForm2:: Clearing()
 		XO7->Picture->LoadFromFile("../../graphics/nic.bmp");
 		XO8->Picture->LoadFromFile("../../graphics/nic.bmp");
 		XO9->Picture->LoadFromFile("../../graphics/nic.bmp");
-		CurryPlayerTaste='x';
+		CurryPlayerTaste='y';
 		Wyniki -> Caption="";
 		XO1->Enabled = True;
 		XO2->Enabled = True;
@@ -731,27 +731,27 @@ void TForm2:: Clearing()
 
 //---------------------------------------------------------------------------
 
-void __fastcall TForm2::OnCreate(TObject *Sender)
+void __fastcall TForm4::OnCreate(TObject *Sender)
 {
 		Clearing();
 }
 
 //---------------------------------------------------------------------------
 
-void __fastcall TForm2::OnClose(TObject *Sender)
+void __fastcall TForm4::OnClose(TObject *Sender)
 {
-		Form2->Close();
+		Form4->Close();
 		Start->Close();
         Tylec->Close();
 }
 
 //---------------------------------------------------------------------------
 
-void __fastcall TForm2::MenuExitClick(TObject *Sender)
+void __fastcall TForm4::MenuExitClick(TObject *Sender)
 {
 	if(CheckWinCondition()==2 || CheckWinCondition()==1)
 	{
-		Form2->Close();
+		Form4->Close();
 		Clearing();
 		Start->Show();
 	}

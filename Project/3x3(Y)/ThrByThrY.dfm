@@ -1,10 +1,9 @@
-
-object Form2: TForm2
+object Form4: TForm4
   Left = 0
   Top = 0
-  Caption = 'Form2'
-  ClientHeight = 662
-  ClientWidth = 688
+  Caption = 'Form4'
+  ClientHeight = 653
+  ClientWidth = 682
   Color = clWhite
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -93,14 +92,14 @@ object Form2: TForm2
     Left = 566
     Top = 321
     Width = 36
-    Height = 24
+    Height = 15
     Caption = 'Wyniki'
   end
   object Label1: TLabel
     Left = 528
     Top = 218
-    Width = 99
-    Height = 31
+    Width = 67
+    Height = 15
     Caption = 'Tura gracza: '
     Font.Charset = EASTEUROPE_CHARSET
     Font.Color = clWindowText

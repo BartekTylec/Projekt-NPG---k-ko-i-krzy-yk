@@ -1,8 +1,8 @@
 
 //---------------------------------------------------------------------------
 
-#ifndef ThrByThrH
-#define ThrByThrH
+#ifndef ThrByThrYH
+#define ThrByThrYH
 //---------------------------------------------------------------------------
 #include <System.Classes.hpp>
 #include <Vcl.Controls.hpp>
@@ -11,7 +11,7 @@
 #include <Vcl.ExtCtrls.hpp>
 #include <Vcl.Mask.hpp>
 //---------------------------------------------------------------------------
-class TForm2 : public TForm
+class TForm4 : public TForm
 {
 __published:	// IDE-managed Components
 	TImage *XO1;
@@ -43,12 +43,12 @@ __published:	// IDE-managed Components
 	//void __fastcall LabelChange(TObject *Sender);
 	//void __fastcall WynikiClick(TObject *Sender);
 private:	// User declarations
-	int TForm2:: CheckWinCondition();
-	void TForm2:: Clearing();
+	int TForm4:: CheckWinCondition();
+	void TForm4:: Clearing();
 public:		// User declarations
-	__fastcall TForm2(TComponent* Owner);
+	__fastcall TForm4(TComponent* Owner);
 };
 //---------------------------------------------------------------------------
-extern PACKAGE TForm2 *Form2;
+extern PACKAGE TForm4 *Form4;
 //---------------------------------------------------------------------------
 #endif
