@@ -1,3 +1,4 @@
+
 //---------------------------------------------------------------------------
 
 #ifndef ThrByThrH
@@ -22,11 +23,10 @@ __published:	// IDE-managed Components
 	TImage *XO9;
 	TImage *XO8;
 	TImage *XO7;
-	TLabel *Tura;
+	TLabel *CurryPlayer;
 	TLabel *Wyniki;
 	TButton *MenuExit;
-	TStaticText *CurryPlayer;
-	TButton *Cofnij;
+	TLabel *Label1;
 	void __fastcall XO1Click(TObject *Sender);
 	void __fastcall XO2Click(TObject *Sender);
 	void __fastcall XO3Click(TObject *Sender);
@@ -37,13 +37,14 @@ __published:	// IDE-managed Components
 	void __fastcall XO8Click(TObject *Sender);
 	void __fastcall XO7Click(TObject *Sender);
 	void __fastcall OnCreate(TObject *Sender);
-	//void __fastcall WynikiClick(TObject *Sender);
-	//void __fastcall CurryPlayerClick(TObject *Sender);
+	void __fastcall MenuExitClick(TObject *Sender);
+	void __fastcall OnClose(TObject *Sender);
 	//void __fastcall XO10Click(TObject *Sender);
 	//void __fastcall LabelChange(TObject *Sender);
 	//void __fastcall WynikiClick(TObject *Sender);
 private:	// User declarations
-    int TForm2:: CheckWinCondition();
+	int TForm2:: CheckWinCondition();
+	void TForm2:: Clearing();
 public:		// User declarations
 	__fastcall TForm2(TComponent* Owner);
 };
