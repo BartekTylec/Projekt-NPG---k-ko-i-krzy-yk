@@ -43,6 +43,7 @@ __published:	// IDE-managed Components
 	TLabel *Label1;
 	void __fastcall PoleClick(TObject *Sender);
 	void __fastcall MenuExitClick(TObject *Sender);
+	void __fastcall OnClose(TObject *Sender);
 private:	// User declarations
 	int TFiveByFive:: CheckWinCondition();
 	void TFiveByFive:: Clearing();

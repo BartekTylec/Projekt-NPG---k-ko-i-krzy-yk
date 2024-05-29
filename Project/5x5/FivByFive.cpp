@@ -251,6 +251,12 @@ void TFiveByFive:: TagRes()
 }
 //---------------------------------------------------------------------------
 
+void __fastcall TFiveByFive::OnClose(TObject *Sender)
+{
+		FiveByFive->Close();
+		Start->Close();
+}
+
 void __fastcall TFiveByFive::MenuExitClick(TObject *Sender)
 {
 	if(CheckWinCondition()==2 || CheckWinCondition()==1)

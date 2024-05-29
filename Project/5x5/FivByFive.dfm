@@ -2,8 +2,8 @@ object FiveByFive: TFiveByFive
   Left = 0
   Top = 0
   Caption = 'FiveByFive'
-  ClientHeight = 712
-  ClientWidth = 938
+  ClientHeight = 694
+  ClientWidth = 926
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -209,8 +209,8 @@ object FiveByFive: TFiveByFive
   object Label1: TLabel
     Left = 808
     Top = 194
-    Width = 89
-    Height = 25
+    Width = 67
+    Height = 15
     Caption = 'Tura gracza: '
     Font.Charset = EASTEUROPE_CHARSET
     Font.Color = clWindowText
