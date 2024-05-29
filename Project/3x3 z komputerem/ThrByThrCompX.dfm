@@ -2,8 +2,8 @@ object Form3: TForm3
   Left = 0
   Top = 0
   Caption = '2'
-  ClientHeight = 632
-  ClientWidth = 677
+  ClientHeight = 614
+  ClientWidth = 665
   Color = clWhite
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -78,7 +78,7 @@ object Form3: TForm3
   object Tura: TLabel
     Left = 160
     Top = 44
-    Width = 177
+    Width = 178
     Height = 37
     Caption = 'Symbol gracza:'
     Font.Charset = DEFAULT_CHARSET
@@ -108,12 +108,13 @@ object Form3: TForm3
     Height = 25
     Caption = 'Wyj'#347'ce do menu'
     TabOrder = 0
+    OnClick = MenuExitClick
   end
   object CurryPlayer: TStaticText
     Left = 354
     Top = 44
     Width = 16
-    Height = 46
+    Height = 41
     Caption = 'x'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
