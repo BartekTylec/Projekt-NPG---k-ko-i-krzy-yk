@@ -14,6 +14,7 @@
 #pragma resource "*.dfm"
 TTylec *Tylec;
 int x = 0;
+std::string* w;
 //---------------------------------------------------------------------------
 __fastcall TTylec::TTylec(TComponent* Owner)
 	: TForm(Owner)
@@ -88,10 +89,10 @@ void __fastcall TTylec::Button6Click(TObject *Sender)
 		Tylec->Close();
 	}
 	if (x == 22) {
-
+		 ShowMessage("Work in progress, opcja niedostêpna");
 	}
 	if (x == 23) {
-
+		ShowMessage("Work in progress, opcja niedostepna:(");
 	}
 }
 
@@ -99,7 +100,7 @@ void __fastcall TTylec::Button6Click(TObject *Sender)
 
 void __fastcall TTylec::Button7Click(TObject *Sender)
 {
-	x == 0;
+	x = 0;
 	Button1->Enabled = True;
 	Button2->Enabled = True;
 	Button3->Enabled = True;
