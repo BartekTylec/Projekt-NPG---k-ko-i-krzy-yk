@@ -12,6 +12,7 @@
 TForm2 *Form2;
 char CurryPlayerTaste =  'x';
 char sq1, sq2, sq3, sq4, sq5, sq6, sq7, sq8, sq9;
+int last_sq=0;
 //---------------------------------------------------------------------------
 __fastcall TForm2::TForm2(TComponent* Owner): TForm(Owner)
 {
@@ -21,13 +22,15 @@ __fastcall TForm2::TForm2(TComponent* Owner): TForm(Owner)
 
 void __fastcall TForm2::XO1Click(TObject *Sender)
 {
+	 last_sq=1;
+     back->Enabled=True;
 	 if(CurryPlayerTaste=='x')
 	 {
 		sq1=CurryPlayerTaste;
 		XO1->Picture->LoadFromFile("../../graphics/x.bmp");
 		CurryPlayerTaste='o';
 		CurryPlayer-> Caption = CurryPlayerTaste;
-		 XO1->Enabled = False;
+		XO1->Enabled = False;
 
 
 			 if(CheckWinCondition()==1)
@@ -81,6 +84,8 @@ void __fastcall TForm2::XO1Click(TObject *Sender)
 }
 void __fastcall TForm2::XO2Click(TObject *Sender)
 {
+	 last_sq=2;
+	 back->Enabled=True;
 	 if(CurryPlayerTaste=='x')
 	 {
 		sq2=CurryPlayerTaste;
@@ -141,6 +146,8 @@ void __fastcall TForm2::XO2Click(TObject *Sender)
 }
 void __fastcall TForm2::XO3Click(TObject *Sender)
 {
+	 last_sq=3;
+	 back->Enabled=True;
 	 if(CurryPlayerTaste=='x')
 	 {
 	   sq3=CurryPlayerTaste;
@@ -201,7 +208,9 @@ void __fastcall TForm2::XO3Click(TObject *Sender)
 }
 void __fastcall TForm2::XO4Click(TObject *Sender)
 {
-	 if(CurryPlayerTaste=='x')
+	 last_sq=4;
+	 back->Enabled=True;
+	 ;if(CurryPlayerTaste=='x')
 	 {
 		sq4=CurryPlayerTaste;
 		XO4->Picture->LoadFromFile("../../graphics/x.bmp");
@@ -261,6 +270,8 @@ void __fastcall TForm2::XO4Click(TObject *Sender)
 }
 void __fastcall TForm2::XO5Click(TObject *Sender)
 {
+	 last_sq=5;
+	 back->Enabled=True;
 	 if(CurryPlayerTaste=='x')
 	 {
 		sq5=CurryPlayerTaste;
@@ -321,6 +332,8 @@ void __fastcall TForm2::XO5Click(TObject *Sender)
 }
 void __fastcall TForm2::XO6Click(TObject *Sender)
 {
+	 last_sq=6;
+	 back->Enabled=True;
 	 if(CurryPlayerTaste=='x')
 	 {
 		sq6=CurryPlayerTaste;
@@ -384,6 +397,8 @@ void __fastcall TForm2::XO6Click(TObject *Sender)
 }
 void __fastcall TForm2::XO9Click(TObject *Sender)
 {
+	 last_sq=9;
+	 back->Enabled=True;
 	 if(CurryPlayerTaste=='x')
 	 {
 		sq9=CurryPlayerTaste;
@@ -445,6 +460,8 @@ void __fastcall TForm2::XO9Click(TObject *Sender)
 }
 void __fastcall TForm2::XO8Click(TObject *Sender)
 {
+	 last_sq=8;
+	 back->Enabled=True;
 	 if(CurryPlayerTaste=='x')
 	 {
 		sq8=CurryPlayerTaste;
@@ -505,6 +522,8 @@ void __fastcall TForm2::XO8Click(TObject *Sender)
 }
 void __fastcall TForm2::XO7Click(TObject *Sender)
 {
+	 last_sq=7;
+	 back->Enabled=True;
 	 if(CurryPlayerTaste=='x')
 	 {
 		sq7=CurryPlayerTaste;
@@ -741,7 +760,6 @@ void __fastcall TForm2::OnClose(TObject *Sender)
 {
 		Form2->Close();
 		Start->Close();
-        Tylec->Close();
 }
 
 //---------------------------------------------------------------------------
@@ -758,4 +776,79 @@ void __fastcall TForm2::MenuExitClick(TObject *Sender)
 //---------------------------------------------------------------------------
 
 
+
+void __fastcall TForm2::backClick(TObject *Sender)
+{
+	if(CheckWinCondition()==2 || CheckWinCondition()==1)
+	{
+		back->Enabled=False;
+		return ;
+	}
+	if(last_sq==1)
+	{
+		XO1->Picture->LoadFromFile("../../graphics/nic.bmp");
+		XO1->Enabled = True;
+		sq1 = NULL;
+	}
+	else if(last_sq==2)
+	{
+		XO2->Picture->LoadFromFile("../../graphics/nic.bmp");
+		XO2->Enabled = True;
+		sq2 = NULL;
+	}
+	else if(last_sq==3)
+	{
+        XO3->Picture->LoadFromFile("../../graphics/nic.bmp");
+		XO3->Enabled = True;
+		sq3 = NULL;
+	}
+	else if(last_sq==4)
+	{
+		XO4->Picture->LoadFromFile("../../graphics/nic.bmp");
+		XO4->Enabled = True;
+		sq4 = NULL;
+	}
+	else if(last_sq==5)
+	{
+		XO5->Picture->LoadFromFile("../../graphics/nic.bmp");
+		XO5->Enabled = True;
+		sq5 = NULL;
+	}
+	else if(last_sq==6)
+	{
+		XO6->Picture->LoadFromFile("../../graphics/nic.bmp");
+		XO6->Enabled = True;
+		sq6 = NULL;
+	}
+	else if(last_sq==7)
+	{
+		XO7->Picture->LoadFromFile("../../graphics/nic.bmp");
+		XO7->Enabled = True;
+		sq7 = NULL;
+	}
+	else if(last_sq==8)
+	{
+		XO8->Picture->LoadFromFile("../../graphics/nic.bmp");
+		XO8->Enabled = True;
+		sq8 = NULL;
+	}
+	else if(last_sq==9)
+	{
+		XO9->Picture->LoadFromFile("../../graphics/nic.bmp");
+		XO9->Enabled = True;
+		sq9 = NULL;
+	}
+
+	if(CurryPlayerTaste=='o')
+	{
+		CurryPlayerTaste='x';
+	}
+	else if(CurryPlayerTaste=='x')
+	{
+		CurryPlayerTaste='o';
+	}
+	back->Enabled=False;
+	CurryPlayer-> Caption = CurryPlayerTaste;
+}
+//---------------------------------------------------------------------------
 

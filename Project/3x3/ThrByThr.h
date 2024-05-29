@@ -26,6 +26,7 @@ __published:	// IDE-managed Components
 	TLabel *Wyniki;
 	TButton *MenuExit;
 	TLabel *Label1;
+	TButton *back;
 	void __fastcall XO1Click(TObject *Sender);
 	void __fastcall XO2Click(TObject *Sender);
 	void __fastcall XO3Click(TObject *Sender);
@@ -38,6 +39,7 @@ __published:	// IDE-managed Components
 	void __fastcall OnCreate(TObject *Sender);
 	void __fastcall MenuExitClick(TObject *Sender);
 	void __fastcall OnClose(TObject *Sender);
+	void __fastcall backClick(TObject *Sender);
 	//void __fastcall XO10Click(TObject *Sender);
 	//void __fastcall LabelChange(TObject *Sender);
 	//void __fastcall WynikiClick(TObject *Sender);

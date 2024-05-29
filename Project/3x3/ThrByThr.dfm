@@ -92,14 +92,14 @@ object Form2: TForm2
     Left = 566
     Top = 321
     Width = 36
-    Height = 24
+    Height = 15
     Caption = 'Wyniki'
   end
   object Label1: TLabel
     Left = 528
     Top = 218
-    Width = 99
-    Height = 31
+    Width = 67
+    Height = 15
     Caption = 'Tura gracza: '
     Font.Charset = EASTEUROPE_CHARSET
     Font.Color = clWindowText
@@ -116,5 +116,14 @@ object Form2: TForm2
     Caption = 'Wyj'#347'ce do menu'
     TabOrder = 0
     OnClick = MenuExitClick
+  end
+  object back: TButton
+    Left = 544
+    Top = 496
+    Width = 75
+    Height = 25
+    Caption = 'Cofnij'
+    TabOrder = 1
+    OnClick = backClick
   end
 end
