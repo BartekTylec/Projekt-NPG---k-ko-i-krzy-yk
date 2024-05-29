@@ -2,8 +2,8 @@ object Form3: TForm3
   Left = 0
   Top = 0
   Caption = '2'
-  ClientHeight = 614
-  ClientWidth = 665
+  ClientHeight = 623
+  ClientWidth = 671
   Color = clWhite
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
