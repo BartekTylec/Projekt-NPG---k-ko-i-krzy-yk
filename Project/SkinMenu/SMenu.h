@@ -1,33 +1,29 @@
 //---------------------------------------------------------------------------
 
-#ifndef Unit2H
-#define Unit2H
+#ifndef SMenuH
+#define SMenuH
 //---------------------------------------------------------------------------
 #include <System.Classes.hpp>
 #include <Vcl.Controls.hpp>
 #include <Vcl.StdCtrls.hpp>
 #include <Vcl.Forms.hpp>
+#include <Vcl.ExtCtrls.hpp>
 //---------------------------------------------------------------------------
-class TTylec : public TForm
+class TSkinMenu : public TForm
 {
 __published:	// IDE-managed Components
-	TButton *Button1;
-	TButton *Button2;
-	TButton *Button3;
-	TLabel *Label1;
-	TLabel *Label2;
-	TButton *Button4;
-	TButton *Button5;
-	void __fastcall Button2Click(TObject *Sender);
-	void __fastcall Button1Click(TObject *Sender);
-	void __fastcall Button3Click(TObject *Sender);
-	void __fastcall Button4Click(TObject *Sender);
-	void __fastcall Button5Click(TObject *Sender);
+	TStaticText *StaticText1;
+	TImage *Y;
+	TImage *X;
+	void __fastcall OnCreate(TObject *Sender);
+	void __fastcall XClick(TObject *Sender);
+	void __fastcall YClick(TObject *Sender);
+    void __fastcall OnClose(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
-	__fastcall TTylec(TComponent* Owner);
+	__fastcall TSkinMenu(TComponent* Owner);
 };
 //---------------------------------------------------------------------------
-extern PACKAGE TTylec *Tylec;
+extern PACKAGE TSkinMenu *SkinMenu;
 //---------------------------------------------------------------------------
 #endif

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.786,=C:\Users\dzien\OneDrive - Akademia Górniczo-Hutnicza im. Stanisława Staszica w Krakowie\Dokumenty pozszkolne\Dokumenty\Embarcadero\Studio\Projects\Unit2.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.695,=C:\Users\dzien\OneDrive - Akademia Górniczo-Hutnicza im. Stanisława Staszica w Krakowie\Dokumenty pozszkolne\Dokumenty\Embarcadero\Studio\Projects\Unit2.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.328,=C:\Users\dzien\Pictures\Screenshots\Zrzut ekranu 2023-10-31 124548.png</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.662,C:\Users\dzien\OneDrive - Akademia Górniczo-Hutnicza im. Stanisława Staszica w Krakowie\Dokumenty pozszkolne\Dokumenty\Embarcadero\Studio\Projects\Project1.cbproj=C:\Users\dzien\OneDrive - Akademia Górniczo-Hutnicza im. Stanisława Staszica w Krakowie\Dokumenty pozszkolne\Dokumenty\Embarcadero\Studio\Projects\Project1.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.684,=C:\Users\dzien\OneDrive - Akademia Górniczo-Hutnicza im. Stanisława Staszica w Krakowie\Dokumenty pozszkolne\Dokumenty\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.611,=C:\Users\dzien\OneDrive - Akademia Górniczo-Hutnicza im. Stanisława Staszica w Krakowie\Dokumenty pozszkolne\Dokumenty\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.615,=C:\Users\dzien\Pictures\o.bmp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.625,=C:\Users\dzien\Pictures\x.bmp</Transaction>
+  </Transactions>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="..\..\..\..\..\..\..\dzien"/>
+    <File Path="..\..\..\..\..\..\Pictures"/>
+    <File Path="..\..\..\..\..\..\Pictures\Screenshots"/>
+    <File Path="..\..\..\..\..\..\Pictures\Screenshots\Zrzut ekranu 2023-10-31 124548.png"/>
+    <File Path="..\..\..\..\..\..\Pictures\o.bmp"/>
+    <File Path="..\..\..\..\..\..\Pictures\x.bmp"/>
+    <File Path="Project1.cpp"/>
+    <File Path="Unit1.cpp"/>
+    <File Path="Unit1.cpp"/>
+    <File Path="Unit1.dfm"/>
+    <File Path="Unit1.h"/>
+    <File Path="Unit2.cpp"/>
+    <File Path="Unit2.cpp"/>
+    <File Path="Unit2.dfm"/>
+    <File Path="Unit2.h"/>
+  </ProjectSortOrder>
+</BorlandProject>

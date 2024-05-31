@@ -2,14 +2,15 @@ object Start: TStart
   Left = 0
   Top = 0
   Caption = 'Witamy!!!'
-  ClientHeight = 442
-  ClientWidth = 628
+  ClientHeight = 437
+  ClientWidth = 631
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
+  OnCreate = StartCreate
   TextHeight = 15
   object Label1: TLabel
     Left = 248
@@ -23,6 +24,12 @@ object Start: TStart
     Font.Name = 'Segoe UI'
     Font.Style = []
     ParentFont = False
+  end
+  object Image1: TImage
+    Left = 0
+    Top = 0
+    Width = 633
+    Height = 441
   end
   object Button1: TButton
     Left = 136

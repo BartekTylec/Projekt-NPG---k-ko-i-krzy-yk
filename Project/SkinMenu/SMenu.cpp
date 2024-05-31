@@ -3,49 +3,41 @@
 #include <vcl.h>
 #pragma hdrstop
 
-#include "Unit2.h"
+#include "SMenu.h"
+#include "ThrByThr.h"
+#include "ThrByThrY.h"
+#include "EkranStartowy.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma resource "*.dfm"
-TTylec *Tylec;
+TSkinMenu *SkinMenu;
+int z =0;
 //---------------------------------------------------------------------------
-__fastcall TTylec::TTylec(TComponent* Owner)
+__fastcall TSkinMenu::TSkinMenu(TComponent* Owner)
 	: TForm(Owner)
 {
 }
 //---------------------------------------------------------------------------
-void __fastcall TTylec::Button2Click(TObject *Sender)
+void __fastcall TSkinMenu::OnCreate(TObject *Sender)
 {
-
-		   Tylec->Close();
+	Y->Picture->LoadFromFile("../../graphics/y.bmp");
+	X->Picture->LoadFromFile("../../graphics/x.bmp");
 }
 //---------------------------------------------------------------------------
-
-void __fastcall TTylec::Button1Click(TObject *Sender)
+void __fastcall TSkinMenu::XClick(TObject *Sender)
 {
-
-		   Tylec->Close();
+	   Form2->ShowModal();
+	   SkinMenu->Close();
 }
 //---------------------------------------------------------------------------
-
-void __fastcall TTylec::Button5Click(TObject *Sender)
+void __fastcall TSkinMenu::YClick(TObject *Sender)
 {
-
-		   Tylec->Close();
+          Form4->ShowModal();
+	   SkinMenu->Close();
+}
+void __fastcall TSkinMenu::OnClose(TObject *Sender)
+{
+		SkinMenu->Close();
+		Start->Close();
 }
 //---------------------------------------------------------------------------
-
-void __fastcall TTylec::Button4Click(TObject *Sender)
-{
-
-		   Tylec->Close();
-}
-//---------------------------------------------------------------------------
-
-void __fastcall TTylec::Button3Click(TObject *Sender)
-{
-
-		   Tylec->Close();
-}
-//---------------------------------------------------------------------------
-
